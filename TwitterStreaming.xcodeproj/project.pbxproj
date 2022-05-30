@@ -34,6 +34,14 @@
 		11E440FD28449931003111B1 /* LiveTweetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440FC28449931003111B1 /* LiveTweetsService.swift */; };
 		11E4410128449AF8003111B1 /* LiveTweetsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */; };
 		11E441032844A499003111B1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441022844A499003111B1 /* BaseViewController.swift */; };
+		11E4410D2844B570003111B1 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441052844B56F003111B1 /* TableViewHelper.swift */; };
+		11E4410E2844B570003111B1 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441062844B56F003111B1 /* TableViewDataSource.swift */; };
+		11E4410F2844B570003111B1 /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441072844B56F003111B1 /* TableViewSection.swift */; };
+		11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441082844B570003111B1 /* TableViewCellModel.swift */; };
+		11E441112844B570003111B1 /* TableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441092844B570003111B1 /* TableViewSectionModel.swift */; };
+		11E441122844B570003111B1 /* TableViewHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410A2844B570003111B1 /* TableViewHeaderSection.swift */; };
+		11E441132844B570003111B1 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410B2844B570003111B1 /* TableViewModel.swift */; };
+		11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410C2844B570003111B1 /* TableViewFooterSectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +74,14 @@
 		11E440FC28449931003111B1 /* LiveTweetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsService.swift; sourceTree = "<group>"; };
 		11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsCoordinator.swift; sourceTree = "<group>"; };
 		11E441022844A499003111B1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		11E441052844B56F003111B1 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
+		11E441062844B56F003111B1 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		11E441072844B56F003111B1 /* TableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
+		11E441082844B570003111B1 /* TableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		11E441092844B570003111B1 /* TableViewSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionModel.swift; sourceTree = "<group>"; };
+		11E4410A2844B570003111B1 /* TableViewHeaderSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeaderSection.swift; sourceTree = "<group>"; };
+		11E4410B2844B570003111B1 /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		11E4410C2844B570003111B1 /* TableViewFooterSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewFooterSectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +152,7 @@
 		11E440C528448043003111B1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				11E441042844B56F003111B1 /* POPTableView */,
 				11E440C62844804D003111B1 /* Extension */,
 				11E440EF28448C0B003111B1 /* Presenter.swift */,
 				11E441022844A499003111B1 /* BaseViewController.swift */,
@@ -250,6 +267,21 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		11E441042844B56F003111B1 /* POPTableView */ = {
+			isa = PBXGroup;
+			children = (
+				11E441052844B56F003111B1 /* TableViewHelper.swift */,
+				11E441062844B56F003111B1 /* TableViewDataSource.swift */,
+				11E441072844B56F003111B1 /* TableViewSection.swift */,
+				11E441082844B570003111B1 /* TableViewCellModel.swift */,
+				11E441092844B570003111B1 /* TableViewSectionModel.swift */,
+				11E4410A2844B570003111B1 /* TableViewHeaderSection.swift */,
+				11E4410B2844B570003111B1 /* TableViewModel.swift */,
+				11E4410C2844B570003111B1 /* TableViewFooterSectionModel.swift */,
+			);
+			path = POPTableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -331,15 +363,23 @@
 				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
+				11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */,
+				11E441122844B570003111B1 /* TableViewHeaderSection.swift in Sources */,
+				11E4410D2844B570003111B1 /* TableViewHelper.swift in Sources */,
+				11E441112844B570003111B1 /* TableViewSectionModel.swift in Sources */,
 				11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */,
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
 				11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */,
+				11E441132844B570003111B1 /* TableViewModel.swift in Sources */,
 				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
 				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
+				11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
+				11E4410F2844B570003111B1 /* TableViewSection.swift in Sources */,
+				11E4410E2844B570003111B1 /* TableViewDataSource.swift in Sources */,
 				11E440F428449576003111B1 /* LiveTweetsViewController.swift in Sources */,
 				11E440E028448AA6003111B1 /* Coordinator.swift in Sources */,
 				11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */,
