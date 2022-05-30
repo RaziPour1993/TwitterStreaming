@@ -12,6 +12,8 @@
 		11E440B128438FE9003111B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440AF28438FE9003111B1 /* Main.storyboard */; };
 		11E440B328438FEB003111B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B228438FEB003111B1 /* Assets.xcassets */; };
 		11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B428438FEB003111B1 /* LaunchScreen.storyboard */; };
+		11E440C228448025003111B1 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E440C428448025003111B1 /* Localization.strings */; };
+		11E440C82844806B003111B1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440C72844806B003111B1 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		11E440B228438FEB003111B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E440B528438FEB003111B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E440B728438FEB003111B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E440C328448025003111B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		11E440C72844806B003111B1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,72 @@
 		11E440A828438FE9003111B1 /* TwitterStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				11E440A928438FE9003111B1 /* AppDelegate.swift */,
+				11E440CA28448102003111B1 /* Screens */,
+				11E440C9284480F3003111B1 /* Config */,
+				11E440C528448043003111B1 /* Helpers */,
+				11E440BD28447FE2003111B1 /* Resources */,
 				11E440AD28438FE9003111B1 /* ViewController.swift */,
 				11E440AF28438FE9003111B1 /* Main.storyboard */,
-				11E440B228438FEB003111B1 /* Assets.xcassets */,
-				11E440B428438FEB003111B1 /* LaunchScreen.storyboard */,
-				11E440B728438FEB003111B1 /* Info.plist */,
 			);
 			path = TwitterStreaming;
+			sourceTree = "<group>";
+		};
+		11E440BD28447FE2003111B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11E440BF28447FF3003111B1 /* Localization */,
+				11E440BE28447FEB003111B1 /* Photos */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11E440BE28447FEB003111B1 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				11E440B228438FEB003111B1 /* Assets.xcassets */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		11E440BF28447FF3003111B1 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				11E440C428448025003111B1 /* Localization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		11E440C528448043003111B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11E440C62844804D003111B1 /* Extension */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		11E440C62844804D003111B1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11E440C72844806B003111B1 /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		11E440C9284480F3003111B1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11E440A928438FE9003111B1 /* AppDelegate.swift */,
+				11E440B728438FEB003111B1 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		11E440CA28448102003111B1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				11E440B428438FEB003111B1 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */,
+				11E440C228448025003111B1 /* Localization.strings in Resources */,
 				11E440B328438FEB003111B1 /* Assets.xcassets in Resources */,
 				11E440B128438FE9003111B1 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E440C82844806B003111B1 /* String.swift in Sources */,
 				11E440AE28438FE9003111B1 /* ViewController.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
 			);
@@ -157,6 +221,14 @@
 				11E440B528438FEB003111B1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		11E440C428448025003111B1 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E440C328448025003111B1 /* en */,
+			);
+			name = Localization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -285,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5CF5UAFXM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TwitterStreaming/Info.plist;
+				INFOPLIST_FILE = TwitterStreaming/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -313,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5CF5UAFXM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TwitterStreaming/Info.plist;
+				INFOPLIST_FILE = TwitterStreaming/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
