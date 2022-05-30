@@ -19,6 +19,11 @@ final class MainScreenFactoryIMP: ScreenFactory {
         return screen
     }
     
+    func makeTweetDetailScreen(delegate: TweetDetailScreenDelegate, _ tweet: Tweet) -> TweetDetailViewController {
+        let presenter = TweetDetailPresenterIMP(tweet, delegate)
+        let screen = TweetDetailViewController(presenter)
+        return screen
+    }
     
 }
 

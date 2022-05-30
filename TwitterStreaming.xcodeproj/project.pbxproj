@@ -47,6 +47,10 @@
 		11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4411B2844BC4F003111B1 /* Tweet.swift */; };
 		11E441202844C4A6003111B1 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4411E2844C4A6003111B1 /* TweetTableViewCell.swift */; };
 		11E441212844C4A6003111B1 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E4411F2844C4A6003111B1 /* TweetTableViewCell.xib */; };
+		11E441252844DB79003111B1 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441232844DB79003111B1 /* TweetDetailViewController.swift */; };
+		11E441262844DB79003111B1 /* TweetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E441242844DB79003111B1 /* TweetDetailViewController.xib */; };
+		11E441282844DBE7003111B1 /* TweetDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441272844DBE7003111B1 /* TweetDetailPresenter.swift */; };
+		11E4412A2844DC2C003111B1 /* TweetDetailPresenterIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441292844DC2C003111B1 /* TweetDetailPresenterIMP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +96,10 @@
 		11E4411B2844BC4F003111B1 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		11E4411E2844C4A6003111B1 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		11E4411F2844C4A6003111B1 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		11E441232844DB79003111B1 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
+		11E441242844DB79003111B1 /* TweetDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetDetailViewController.xib; sourceTree = "<group>"; };
+		11E441272844DBE7003111B1 /* TweetDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailPresenter.swift; sourceTree = "<group>"; };
+		11E441292844DC2C003111B1 /* TweetDetailPresenterIMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailPresenterIMP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,7 @@
 		11E440CA28448102003111B1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				11E441222844DB0A003111B1 /* TweetDetail */,
 				11E440F128449486003111B1 /* LiveTweets */,
 				11E440E628448B2D003111B1 /* Intro */,
 				11E440B428438FEB003111B1 /* LaunchScreen.storyboard */,
@@ -321,6 +330,17 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		11E441222844DB0A003111B1 /* TweetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				11E441272844DBE7003111B1 /* TweetDetailPresenter.swift */,
+				11E441292844DC2C003111B1 /* TweetDetailPresenterIMP.swift */,
+				11E441232844DB79003111B1 /* TweetDetailViewController.swift */,
+				11E441242844DB79003111B1 /* TweetDetailViewController.xib */,
+			);
+			path = TweetDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E441262844DB79003111B1 /* TweetDetailViewController.xib in Resources */,
 				11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */,
 				11E441212844C4A6003111B1 /* TweetTableViewCell.xib in Resources */,
 				11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */,
@@ -404,6 +425,7 @@
 				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
+				11E4412A2844DC2C003111B1 /* TweetDetailPresenterIMP.swift in Sources */,
 				11E441192844B6E6003111B1 /* TweetCellViewModel.swift in Sources */,
 				11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */,
 				11E441122844B570003111B1 /* TableViewHeaderSection.swift in Sources */,
@@ -414,11 +436,13 @@
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
 				11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */,
+				11E441252844DB79003111B1 /* TweetDetailViewController.swift in Sources */,
 				11E441132844B570003111B1 /* TableViewModel.swift in Sources */,
 				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
 				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
 				11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */,
 				11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */,
+				11E441282844DBE7003111B1 /* TweetDetailPresenter.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
