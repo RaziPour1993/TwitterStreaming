@@ -8,22 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440A928438FE9003111B1 /* AppDelegate.swift */; };
-		11E440AC28438FE9003111B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440AB28438FE9003111B1 /* SceneDelegate.swift */; };
-		11E440AE28438FE9003111B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440AD28438FE9003111B1 /* ViewController.swift */; };
-		11E440B128438FE9003111B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440AF28438FE9003111B1 /* Main.storyboard */; };
 		11E440B328438FEB003111B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B228438FEB003111B1 /* Assets.xcassets */; };
 		11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B428438FEB003111B1 /* LaunchScreen.storyboard */; };
+		11E440C228448025003111B1 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E440C428448025003111B1 /* Localization.strings */; };
+		11E440C82844806B003111B1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440C72844806B003111B1 /* String.swift */; };
+		11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440CC28448AA5003111B1 /* MainCoordinator.swift */; };
+		11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440CF28448AA5003111B1 /* MainCoordinatorFactorIMP.swift */; };
+		11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D028448AA5003111B1 /* CoordinatorFactory.swift */; };
+		11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D228448AA5003111B1 /* MainScreenFactoryIMP.swift */; };
+		11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D328448AA5003111B1 /* ScreenFactory.swift */; };
+		11E440E028448AA6003111B1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D428448AA5003111B1 /* Coordinator.swift */; };
+		11E440E128448AA6003111B1 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D628448AA5003111B1 /* Presentable.swift */; };
+		11E440E228448AA6003111B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D728448AA5003111B1 /* Router.swift */; };
+		11E440E328448AA6003111B1 /* MainRouterIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440D828448AA5003111B1 /* MainRouterIMP.swift */; };
+		11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440DA28448AA5003111B1 /* IntroCoordinator.swift */; };
+		11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440E728448B2D003111B1 /* IntroPresenter.swift */; };
+		11E440EC28448B2E003111B1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440E828448B2D003111B1 /* IntroViewController.swift */; };
+		11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440E928448B2D003111B1 /* IntroPresenterIMP.swift */; };
+		11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E440EA28448B2D003111B1 /* IntroViewController.xib */; };
+		11E440F028448C0B003111B1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440EF28448C0B003111B1 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11E440A628438FE9003111B1 /* TwitterStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E440A928438FE9003111B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11E440AB28438FE9003111B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11E440AD28438FE9003111B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11E440B028438FE9003111B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11E440B228438FEB003111B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E440B528438FEB003111B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E440B728438FEB003111B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E440C328448025003111B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		11E440C72844806B003111B1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		11E440CC28448AA5003111B1 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		11E440CF28448AA5003111B1 /* MainCoordinatorFactorIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinatorFactorIMP.swift; sourceTree = "<group>"; };
+		11E440D028448AA5003111B1 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		11E440D228448AA5003111B1 /* MainScreenFactoryIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenFactoryIMP.swift; sourceTree = "<group>"; };
+		11E440D328448AA5003111B1 /* ScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
+		11E440D428448AA5003111B1 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		11E440D628448AA5003111B1 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		11E440D728448AA5003111B1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		11E440D828448AA5003111B1 /* MainRouterIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouterIMP.swift; sourceTree = "<group>"; };
+		11E440DA28448AA5003111B1 /* IntroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
+		11E440E728448B2D003111B1 /* IntroPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
+		11E440E828448B2D003111B1 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		11E440E928448B2D003111B1 /* IntroPresenterIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPresenterIMP.swift; sourceTree = "<group>"; };
+		11E440EA28448B2D003111B1 /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		11E440EF28448C0B003111B1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,133 @@
 		11E440A828438FE9003111B1 /* TwitterStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				11E440A928438FE9003111B1 /* AppDelegate.swift */,
-				11E440AB28438FE9003111B1 /* SceneDelegate.swift */,
-				11E440AD28438FE9003111B1 /* ViewController.swift */,
-				11E440AF28438FE9003111B1 /* Main.storyboard */,
-				11E440B228438FEB003111B1 /* Assets.xcassets */,
-				11E440B428438FEB003111B1 /* LaunchScreen.storyboard */,
-				11E440B728438FEB003111B1 /* Info.plist */,
+				11E440CB28448A7E003111B1 /* Coordinator */,
+				11E440CA28448102003111B1 /* Screens */,
+				11E440C9284480F3003111B1 /* Config */,
+				11E440C528448043003111B1 /* Helpers */,
+				11E440BD28447FE2003111B1 /* Resources */,
 			);
 			path = TwitterStreaming;
+			sourceTree = "<group>";
+		};
+		11E440BD28447FE2003111B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11E440BF28447FF3003111B1 /* Localization */,
+				11E440BE28447FEB003111B1 /* Photos */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11E440BE28447FEB003111B1 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				11E440B228438FEB003111B1 /* Assets.xcassets */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		11E440BF28447FF3003111B1 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				11E440C428448025003111B1 /* Localization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		11E440C528448043003111B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11E440C62844804D003111B1 /* Extension */,
+				11E440EF28448C0B003111B1 /* Presenter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		11E440C62844804D003111B1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11E440C72844806B003111B1 /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		11E440C9284480F3003111B1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11E440A928438FE9003111B1 /* AppDelegate.swift */,
+				11E440B728438FEB003111B1 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		11E440CA28448102003111B1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				11E440E628448B2D003111B1 /* Intro */,
+				11E440B428438FEB003111B1 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		11E440CB28448A7E003111B1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				11E440DA28448AA5003111B1 /* IntroCoordinator.swift */,
+				11E440CC28448AA5003111B1 /* MainCoordinator.swift */,
+				11E440CD28448AA5003111B1 /* Manager */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		11E440CD28448AA5003111B1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				11E440D528448AA5003111B1 /* Router */,
+				11E440CE28448AA5003111B1 /* CoordinatorFactory */,
+				11E440D128448AA5003111B1 /* ScreenFactory */,
+				11E440D428448AA5003111B1 /* Coordinator.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		11E440CE28448AA5003111B1 /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				11E440CF28448AA5003111B1 /* MainCoordinatorFactorIMP.swift */,
+				11E440D028448AA5003111B1 /* CoordinatorFactory.swift */,
+			);
+			path = CoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		11E440D128448AA5003111B1 /* ScreenFactory */ = {
+			isa = PBXGroup;
+			children = (
+				11E440D228448AA5003111B1 /* MainScreenFactoryIMP.swift */,
+				11E440D328448AA5003111B1 /* ScreenFactory.swift */,
+			);
+			path = ScreenFactory;
+			sourceTree = "<group>";
+		};
+		11E440D528448AA5003111B1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				11E440D628448AA5003111B1 /* Presentable.swift */,
+				11E440D728448AA5003111B1 /* Router.swift */,
+				11E440D828448AA5003111B1 /* MainRouterIMP.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		11E440E628448B2D003111B1 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				11E440E728448B2D003111B1 /* IntroPresenter.swift */,
+				11E440E828448B2D003111B1 /* IntroViewController.swift */,
+				11E440E928448B2D003111B1 /* IntroPresenterIMP.swift */,
+				11E440EA28448B2D003111B1 /* IntroViewController.xib */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */,
+				11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */,
+				11E440C228448025003111B1 /* Localization.strings in Resources */,
 				11E440B328438FEB003111B1 /* Assets.xcassets in Resources */,
-				11E440B128438FE9003111B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +285,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E440AE28438FE9003111B1 /* ViewController.swift in Sources */,
+				11E440F028448C0B003111B1 /* Presenter.swift in Sources */,
+				11E440E228448AA6003111B1 /* Router.swift in Sources */,
+				11E440C82844806B003111B1 /* String.swift in Sources */,
+				11E440E328448AA6003111B1 /* MainRouterIMP.swift in Sources */,
+				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
+				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
+				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
+				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
+				11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */,
+				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
+				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
+				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
-				11E440AC28438FE9003111B1 /* SceneDelegate.swift in Sources */,
+				11E440E028448AA6003111B1 /* Coordinator.swift in Sources */,
+				11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */,
+				11E440EC28448B2E003111B1 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11E440AF28438FE9003111B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11E440B028438FE9003111B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11E440B428438FEB003111B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				11E440B528438FEB003111B1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		11E440C428448025003111B1 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E440C328448025003111B1 /* en */,
+			);
+			name = Localization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,10 +449,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5CF5UAFXM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TwitterStreaming/Info.plist;
+				INFOPLIST_FILE = TwitterStreaming/Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Twitter Streaming";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,11 +460,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.snap.TwitterStreaming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snap.twitterstreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +477,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5CF5UAFXM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TwitterStreaming/Info.plist;
+				INFOPLIST_FILE = TwitterStreaming/Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Twitter Streaming";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,11 +488,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.snap.TwitterStreaming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snap.twitterstreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
