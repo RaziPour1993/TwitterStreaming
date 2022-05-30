@@ -13,6 +13,12 @@ class TweetDetailPresenterIMP {
     weak var delegate: TweetDetailScreenDelegate?
     var tweet: Tweet
     
+    var tweetsViewModel: TweetsViewModel! {
+        didSet {
+            self.view?.updated(tweetDetail: self.tweetsViewModel)
+        }
+    }
+    
     init(_ tweet: Tweet, _ delegate: TweetDetailScreenDelegate) {
         self.tweet = tweet
         self.delegate = delegate
@@ -27,7 +33,7 @@ class TweetDetailPresenterIMP {
 extension TweetDetailPresenterIMP: TweetDetailPresenter {
     
     func present() {
-        
+        self.tweetsViewModel = TweetsViewModel([tweet], delegate: self)
     }
     
     func set(view: TweetDetailPresentingView) {
@@ -35,3 +41,11 @@ extension TweetDetailPresenterIMP: TweetDetailPresenter {
     }
     
 }
+
+extension TweetDetailPresenterIMP: TweetsViewModelDelegate {
+    func didSelect(tweet: Tweet) {
+        
+    }
+    
+}
+

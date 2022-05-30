@@ -54,6 +54,7 @@ extension TweetDetailViewController {
         self.tableView.tableFooterView = UIView()
         self.tableView.sectionHeaderHeight = 0.0
         self.tableView.sectionFooterHeight = 0.0
+        self.tableView.register(TweetTableViewCell.self)
     }
     
 }
