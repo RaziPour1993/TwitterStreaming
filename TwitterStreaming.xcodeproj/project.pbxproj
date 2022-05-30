@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440A928438FE9003111B1 /* AppDelegate.swift */; };
-		11E440AC28438FE9003111B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440AB28438FE9003111B1 /* SceneDelegate.swift */; };
 		11E440AE28438FE9003111B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440AD28438FE9003111B1 /* ViewController.swift */; };
 		11E440B128438FE9003111B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440AF28438FE9003111B1 /* Main.storyboard */; };
 		11E440B328438FEB003111B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B228438FEB003111B1 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		11E440A628438FE9003111B1 /* TwitterStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E440A928438FE9003111B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11E440AB28438FE9003111B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11E440AD28438FE9003111B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11E440B028438FE9003111B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11E440B228438FEB003111B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				11E440A928438FE9003111B1 /* AppDelegate.swift */,
-				11E440AB28438FE9003111B1 /* SceneDelegate.swift */,
 				11E440AD28438FE9003111B1 /* ViewController.swift */,
 				11E440AF28438FE9003111B1 /* Main.storyboard */,
 				11E440B228438FEB003111B1 /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				11E440AE28438FE9003111B1 /* ViewController.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
-				11E440AC28438FE9003111B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.snap.TwitterStreaming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snap.twitterstreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.snap.TwitterStreaming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snap.twitterstreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
