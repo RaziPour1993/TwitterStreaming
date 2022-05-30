@@ -30,7 +30,7 @@ final class IntroCoordinator: Coordinator {
     }
     
     deinit {
-        print(self)
+        debugPrint("📤 deinit \(self)")
     }
     
 }
@@ -42,8 +42,8 @@ extension IntroCoordinator: IntroScreenDelegate {
     }
     
     func displayIntroScreen() {
-        let vc = self.screenFactory.makeIntroScreen(delegate: self)
-        self.router.setRoot(vc)
+        let screen = self.screenFactory.makeIntroScreen(delegate: self)
+        self.router.setRoot(screen)
     }
     
 }

@@ -15,6 +15,10 @@ protocol ScreenDelegate: AnyObject {
     
 }
 
+protocol ScreenManeger: AnyObject {
+    
+}
+
 extension PresentingView where Self: UIViewController {
     
     func willLoadingData() {

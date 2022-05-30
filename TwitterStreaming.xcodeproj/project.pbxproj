@@ -27,6 +27,13 @@
 		11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440E928448B2D003111B1 /* IntroPresenterIMP.swift */; };
 		11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E440EA28448B2D003111B1 /* IntroViewController.xib */; };
 		11E440F028448C0B003111B1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440EF28448C0B003111B1 /* Presenter.swift */; };
+		11E440F428449576003111B1 /* LiveTweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440F228449576003111B1 /* LiveTweetsViewController.swift */; };
+		11E440F528449576003111B1 /* LiveTweetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E440F328449576003111B1 /* LiveTweetsViewController.xib */; };
+		11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440F628449766003111B1 /* LiveTweetsPresenter.swift */; };
+		11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440F82844977B003111B1 /* LiveTweetsPresenterIMP.swift */; };
+		11E440FD28449931003111B1 /* LiveTweetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440FC28449931003111B1 /* LiveTweetsService.swift */; };
+		11E4410128449AF8003111B1 /* LiveTweetsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */; };
+		11E441032844A499003111B1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441022844A499003111B1 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +59,13 @@
 		11E440E928448B2D003111B1 /* IntroPresenterIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPresenterIMP.swift; sourceTree = "<group>"; };
 		11E440EA28448B2D003111B1 /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		11E440EF28448C0B003111B1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		11E440F228449576003111B1 /* LiveTweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsViewController.swift; sourceTree = "<group>"; };
+		11E440F328449576003111B1 /* LiveTweetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveTweetsViewController.xib; sourceTree = "<group>"; };
+		11E440F628449766003111B1 /* LiveTweetsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsPresenter.swift; sourceTree = "<group>"; };
+		11E440F82844977B003111B1 /* LiveTweetsPresenterIMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsPresenterIMP.swift; sourceTree = "<group>"; };
+		11E440FC28449931003111B1 /* LiveTweetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsService.swift; sourceTree = "<group>"; };
+		11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsCoordinator.swift; sourceTree = "<group>"; };
+		11E441022844A499003111B1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +98,12 @@
 		11E440A828438FE9003111B1 /* TwitterStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				11E440CB28448A7E003111B1 /* Coordinator */,
-				11E440CA28448102003111B1 /* Screens */,
 				11E440C9284480F3003111B1 /* Config */,
+				11E440CB28448A7E003111B1 /* Coordinator */,
 				11E440C528448043003111B1 /* Helpers */,
 				11E440BD28447FE2003111B1 /* Resources */,
+				11E440CA28448102003111B1 /* Screens */,
+				11E440FA28449906003111B1 /* Services */,
 			);
 			path = TwitterStreaming;
 			sourceTree = "<group>";
@@ -123,6 +138,7 @@
 			children = (
 				11E440C62844804D003111B1 /* Extension */,
 				11E440EF28448C0B003111B1 /* Presenter.swift */,
+				11E441022844A499003111B1 /* BaseViewController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -147,6 +163,7 @@
 		11E440CA28448102003111B1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				11E440F128449486003111B1 /* LiveTweets */,
 				11E440E628448B2D003111B1 /* Intro */,
 				11E440B428438FEB003111B1 /* LaunchScreen.storyboard */,
 			);
@@ -156,6 +173,7 @@
 		11E440CB28448A7E003111B1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */,
 				11E440DA28448AA5003111B1 /* IntroCoordinator.swift */,
 				11E440CC28448AA5003111B1 /* MainCoordinator.swift */,
 				11E440CD28448AA5003111B1 /* Manager */,
@@ -211,6 +229,25 @@
 				11E440EA28448B2D003111B1 /* IntroViewController.xib */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		11E440F128449486003111B1 /* LiveTweets */ = {
+			isa = PBXGroup;
+			children = (
+				11E440F628449766003111B1 /* LiveTweetsPresenter.swift */,
+				11E440F82844977B003111B1 /* LiveTweetsPresenterIMP.swift */,
+				11E440F228449576003111B1 /* LiveTweetsViewController.swift */,
+				11E440F328449576003111B1 /* LiveTweetsViewController.xib */,
+			);
+			path = LiveTweets;
+			sourceTree = "<group>";
+		};
+		11E440FA28449906003111B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11E440FC28449931003111B1 /* LiveTweetsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +312,7 @@
 				11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */,
 				11E440C228448025003111B1 /* Localization.strings in Resources */,
 				11E440B328438FEB003111B1 /* Assets.xcassets in Resources */,
+				11E440F528449576003111B1 /* LiveTweetsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,18 +327,24 @@
 				11E440E228448AA6003111B1 /* Router.swift in Sources */,
 				11E440C82844806B003111B1 /* String.swift in Sources */,
 				11E440E328448AA6003111B1 /* MainRouterIMP.swift in Sources */,
+				11E4410128449AF8003111B1 /* LiveTweetsCoordinator.swift in Sources */,
+				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
+				11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */,
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
 				11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */,
 				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
+				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
+				11E440F428449576003111B1 /* LiveTweetsViewController.swift in Sources */,
 				11E440E028448AA6003111B1 /* Coordinator.swift in Sources */,
 				11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */,
 				11E440EC28448B2E003111B1 /* IntroViewController.swift in Sources */,
+				11E440FD28449931003111B1 /* LiveTweetsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

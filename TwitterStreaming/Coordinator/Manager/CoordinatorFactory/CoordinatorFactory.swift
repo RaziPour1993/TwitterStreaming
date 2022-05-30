@@ -4,6 +4,7 @@ protocol CoordinatorFactory: AnyObject {
     
     func makeMainCoordinator()-> MainCoordinator
     func makeIntroCoordinator(delegate: IntroCoordinatorDelegate)-> IntroCoordinator
+    func makeLiveTweetsCoordinator(delegate: LiveTweetsCoordinatorDelegate)-> LiveTweetsCoordinator
     
     /// Child Coordinators
     var childCoordinators: [Coordinator] { get set }

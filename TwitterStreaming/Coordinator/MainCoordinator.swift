@@ -17,7 +17,7 @@ final class MainCoordinator: Coordinator {
     }
     
     deinit {
-        print(self)
+        debugPrint("📤 deinit \(self)")
     }
     
 }
@@ -25,11 +25,21 @@ final class MainCoordinator: Coordinator {
 extension MainCoordinator: IntroCoordinatorDelegate {
     
     func didFinish(coordinator: IntroCoordinator) {
-//        self.coordinatorFactory.removeChildCoordinator(coordinator)
+        self.coordinatorFactory.removeChildCoordinator(coordinator)
+        self.startLiveTweetsCoordinator()
     }
     
     func startIntroCoordinator() {
         let coordinator = self.coordinatorFactory.makeIntroCoordinator(delegate: self)
+        coordinator.start()
+    }
+    
+}
+
+extension MainCoordinator: LiveTweetsCoordinatorDelegate {
+    
+    func startLiveTweetsCoordinator() {
+        let coordinator = self.coordinatorFactory.makeLiveTweetsCoordinator(delegate: self)
         coordinator.start()
     }
     
