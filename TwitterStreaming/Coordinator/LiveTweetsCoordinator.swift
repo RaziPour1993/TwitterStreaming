@@ -37,6 +37,10 @@ final class LiveTweetsCoordinator: Coordinator {
 
 extension LiveTweetsCoordinator: LiveTweetsScreenDelegate {
     
+    func didSelect(tweet: Tweet) {
+        
+    }
+    
     func displayLiveTweetsScreen() {
         let screen = self.screenFactory.makeLiveTweetsScreen(delegate: self)
         self.router.setRoot(screen, with: true)

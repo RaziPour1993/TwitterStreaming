@@ -12,11 +12,11 @@ protocol LiveTweetsPresenter: Presenter, LiveTweetsScreenManeger {
 }
 
 protocol LiveTweetsPresentingView: PresentingView {
-
+    func updated(tweets viewModel: TableViewModel)
 }
 
 protocol LiveTweetsScreenDelegate: ScreenDelegate {
-    
+    func didSelect(tweet: Tweet)
 }
 
 protocol LiveTweetsScreenManeger: ScreenManeger {

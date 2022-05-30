@@ -42,6 +42,11 @@
 		11E441122844B570003111B1 /* TableViewHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410A2844B570003111B1 /* TableViewHeaderSection.swift */; };
 		11E441132844B570003111B1 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410B2844B570003111B1 /* TableViewModel.swift */; };
 		11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4410C2844B570003111B1 /* TableViewFooterSectionModel.swift */; };
+		11E441172844B6CE003111B1 /* LiveTweetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441162844B6CE003111B1 /* LiveTweetsViewModel.swift */; };
+		11E441192844B6E6003111B1 /* TweetCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E441182844B6E6003111B1 /* TweetCellViewModel.swift */; };
+		11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4411B2844BC4F003111B1 /* Tweet.swift */; };
+		11E441202844C4A6003111B1 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4411E2844C4A6003111B1 /* TweetTableViewCell.swift */; };
+		11E441212844C4A6003111B1 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E4411F2844C4A6003111B1 /* TweetTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +87,11 @@
 		11E4410A2844B570003111B1 /* TableViewHeaderSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeaderSection.swift; sourceTree = "<group>"; };
 		11E4410B2844B570003111B1 /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		11E4410C2844B570003111B1 /* TableViewFooterSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewFooterSectionModel.swift; sourceTree = "<group>"; };
+		11E441162844B6CE003111B1 /* LiveTweetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTweetsViewModel.swift; sourceTree = "<group>"; };
+		11E441182844B6E6003111B1 /* TweetCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellViewModel.swift; sourceTree = "<group>"; };
+		11E4411B2844BC4F003111B1 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		11E4411E2844C4A6003111B1 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		11E4411F2844C4A6003111B1 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,7 @@
 		11E440A828438FE9003111B1 /* TwitterStreaming */ = {
 			isa = PBXGroup;
 			children = (
+				11E4411A2844BC11003111B1 /* Models */,
 				11E440C9284480F3003111B1 /* Config */,
 				11E440CB28448A7E003111B1 /* Coordinator */,
 				11E440C528448043003111B1 /* Helpers */,
@@ -251,6 +262,8 @@
 		11E440F128449486003111B1 /* LiveTweets */ = {
 			isa = PBXGroup;
 			children = (
+				11E4411D2844C483003111B1 /* Subviews */,
+				11E441152844B697003111B1 /* ViewModel */,
 				11E440F628449766003111B1 /* LiveTweetsPresenter.swift */,
 				11E440F82844977B003111B1 /* LiveTweetsPresenterIMP.swift */,
 				11E440F228449576003111B1 /* LiveTweetsViewController.swift */,
@@ -280,6 +293,32 @@
 				11E4410C2844B570003111B1 /* TableViewFooterSectionModel.swift */,
 			);
 			path = POPTableView;
+			sourceTree = "<group>";
+		};
+		11E441152844B697003111B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11E441162844B6CE003111B1 /* LiveTweetsViewModel.swift */,
+				11E441182844B6E6003111B1 /* TweetCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11E4411A2844BC11003111B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11E4411B2844BC4F003111B1 /* Tweet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11E4411D2844C483003111B1 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				11E4411E2844C4A6003111B1 /* TweetTableViewCell.swift */,
+				11E4411F2844C4A6003111B1 /* TweetTableViewCell.xib */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */,
+				11E441212844C4A6003111B1 /* TweetTableViewCell.xib in Resources */,
 				11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */,
 				11E440C228448025003111B1 /* Localization.strings in Resources */,
 				11E440B328438FEB003111B1 /* Assets.xcassets in Resources */,
@@ -356,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E440F028448C0B003111B1 /* Presenter.swift in Sources */,
+				11E441202844C4A6003111B1 /* TweetTableViewCell.swift in Sources */,
 				11E440E228448AA6003111B1 /* Router.swift in Sources */,
 				11E440C82844806B003111B1 /* String.swift in Sources */,
 				11E440E328448AA6003111B1 /* MainRouterIMP.swift in Sources */,
@@ -363,10 +404,12 @@
 				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
+				11E441192844B6E6003111B1 /* TweetCellViewModel.swift in Sources */,
 				11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */,
 				11E441122844B570003111B1 /* TableViewHeaderSection.swift in Sources */,
 				11E4410D2844B570003111B1 /* TableViewHelper.swift in Sources */,
 				11E441112844B570003111B1 /* TableViewSectionModel.swift in Sources */,
+				11E441172844B6CE003111B1 /* LiveTweetsViewModel.swift in Sources */,
 				11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */,
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
@@ -374,6 +417,7 @@
 				11E441132844B570003111B1 /* TableViewModel.swift in Sources */,
 				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
 				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
+				11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */,
 				11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
