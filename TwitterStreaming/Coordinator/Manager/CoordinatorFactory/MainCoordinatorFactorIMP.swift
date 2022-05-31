@@ -24,4 +24,10 @@ final class MainCoordinatorFactorIMP: CoordinatorFactory {
         return coordinator
     }
     
+    func makeLiveTweetsCoordinator(delegate: LiveTweetsCoordinatorDelegate) -> LiveTweetsCoordinator {
+        let coordinator = LiveTweetsCoordinator(delegate, self, self.screenFactory, self.router)
+        self.addChildCoordinator(coordinator)
+        return coordinator
+    }
+    
 }

@@ -17,7 +17,7 @@ class IntroPresenterIMP {
     }
     
     deinit {
-        print(self)
+        debugPrint("📤 deinit \(self)")
     }
     
 }
@@ -25,7 +25,7 @@ class IntroPresenterIMP {
 extension IntroPresenterIMP: IntroPresenter {
     
     func present() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.delegate?.preparationDone()
         }
     }

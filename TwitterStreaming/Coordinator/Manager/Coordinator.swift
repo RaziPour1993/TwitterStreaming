@@ -10,3 +10,7 @@ protocol Coordinator: AnyObject {
     func start()
     
 }
+
+protocol CoordinatorDelegate: AnyObject {
+    
+}
