@@ -9,7 +9,7 @@ import Foundation
  
 typealias Tweets = [Tweet]
 
-struct Tweet {
+struct Tweet: Codable {
     
     var name  = "Test"
     
