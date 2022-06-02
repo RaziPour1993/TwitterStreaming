@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1135075A2848A20D003EDC79 /* NetworkManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073B2848A20C003EDC79 /* NetworkManeger.swift */; };
+		1135075B2848A20D003EDC79 /* NetworkResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */; };
+		1135075C2848A20D003EDC79 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073D2848A20C003EDC79 /* NetworkRequest.swift */; };
+		1135075D2848A20D003EDC79 /* HTTPBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073E2848A20C003EDC79 /* HTTPBodyEncoding.swift */; };
+		1135075E2848A20D003EDC79 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073F2848A20C003EDC79 /* Parser.swift */; };
+		1135076A2848A20D003EDC79 /* NetworkRequestIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507592848A20D003EDC79 /* NetworkRequestIMP.swift */; };
+		1135076E2848B15F003EDC79 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135076D2848B15F003EDC79 /* Rule.swift */; };
+		113507702848B600003EDC79 /* AddRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135076F2848B600003EDC79 /* AddRules.swift */; };
+		113507722848B61A003EDC79 /* DeleteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507712848B61A003EDC79 /* DeleteRules.swift */; };
 		11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440A928438FE9003111B1 /* AppDelegate.swift */; };
 		11E440B328438FEB003111B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B228438FEB003111B1 /* Assets.xcassets */; };
 		11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B428438FEB003111B1 /* LaunchScreen.storyboard */; };
@@ -54,6 +63,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1135073B2848A20C003EDC79 /* NetworkManeger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManeger.swift; sourceTree = "<group>"; };
+		1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseStatus.swift; sourceTree = "<group>"; };
+		1135073D2848A20C003EDC79 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		1135073E2848A20C003EDC79 /* HTTPBodyEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBodyEncoding.swift; sourceTree = "<group>"; };
+		1135073F2848A20C003EDC79 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		113507592848A20D003EDC79 /* NetworkRequestIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestIMP.swift; sourceTree = "<group>"; };
+		1135076D2848B15F003EDC79 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		1135076F2848B600003EDC79 /* AddRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRules.swift; sourceTree = "<group>"; };
+		113507712848B61A003EDC79 /* DeleteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRules.swift; sourceTree = "<group>"; };
 		11E440A628438FE9003111B1 /* TwitterStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E440A928438FE9003111B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E440B228438FEB003111B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +131,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1135072828488EF9003EDC79 /* NetworkManeger */ = {
+			isa = PBXGroup;
+			children = (
+				1135073E2848A20C003EDC79 /* HTTPBodyEncoding.swift */,
+				1135073B2848A20C003EDC79 /* NetworkManeger.swift */,
+				1135073D2848A20C003EDC79 /* NetworkRequest.swift */,
+				113507592848A20D003EDC79 /* NetworkRequestIMP.swift */,
+				1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */,
+				1135073F2848A20C003EDC79 /* Parser.swift */,
+			);
+			path = NetworkManeger;
+			sourceTree = "<group>";
+		};
 		11E4409D28438FE9003111B1 = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +315,7 @@
 		11E440FA28449906003111B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1135072828488EF9003EDC79 /* NetworkManeger */,
 				11E440FC28449931003111B1 /* LiveTweetsService.swift */,
 			);
 			path = Services;
@@ -317,6 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				11E4411B2844BC4F003111B1 /* Tweet.swift */,
+				1135076D2848B15F003EDC79 /* Rule.swift */,
+				1135076F2848B600003EDC79 /* AddRules.swift */,
+				113507712848B61A003EDC79 /* DeleteRules.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -422,6 +457,7 @@
 				11E440C82844806B003111B1 /* String.swift in Sources */,
 				11E440E328448AA6003111B1 /* MainRouterIMP.swift in Sources */,
 				11E4410128449AF8003111B1 /* LiveTweetsCoordinator.swift in Sources */,
+				1135075A2848A20D003EDC79 /* NetworkManeger.swift in Sources */,
 				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
@@ -434,25 +470,33 @@
 				11E441172844B6CE003111B1 /* LiveTweetsViewModel.swift in Sources */,
 				11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */,
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
+				113507702848B600003EDC79 /* AddRules.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
+				1135075E2848A20D003EDC79 /* Parser.swift in Sources */,
 				11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */,
 				11E441252844DB79003111B1 /* TweetDetailViewController.swift in Sources */,
 				11E441132844B570003111B1 /* TableViewModel.swift in Sources */,
 				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
+				1135076E2848B15F003EDC79 /* Rule.swift in Sources */,
 				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
 				11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */,
+				1135076A2848A20D003EDC79 /* NetworkRequestIMP.swift in Sources */,
 				11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */,
 				11E441282844DBE7003111B1 /* TweetDetailPresenter.swift in Sources */,
+				1135075D2848A20D003EDC79 /* HTTPBodyEncoding.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
+				113507722848B61A003EDC79 /* DeleteRules.swift in Sources */,
 				11E4410F2844B570003111B1 /* TableViewSection.swift in Sources */,
 				11E4410E2844B570003111B1 /* TableViewDataSource.swift in Sources */,
 				11E440F428449576003111B1 /* LiveTweetsViewController.swift in Sources */,
+				1135075C2848A20D003EDC79 /* NetworkRequest.swift in Sources */,
 				11E440E028448AA6003111B1 /* Coordinator.swift in Sources */,
 				11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */,
 				11E440EC28448B2E003111B1 /* IntroViewController.swift in Sources */,
 				11E440FD28449931003111B1 /* LiveTweetsService.swift in Sources */,
+				1135075B2848A20D003EDC79 /* NetworkResponseStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
