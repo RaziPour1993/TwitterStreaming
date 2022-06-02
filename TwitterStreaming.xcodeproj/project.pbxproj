@@ -16,6 +16,17 @@
 		1135076E2848B15F003EDC79 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135076D2848B15F003EDC79 /* Rule.swift */; };
 		113507702848B600003EDC79 /* AddRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135076F2848B600003EDC79 /* AddRules.swift */; };
 		113507722848B61A003EDC79 /* DeleteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507712848B61A003EDC79 /* DeleteRules.swift */; };
+		1135077D2848E411003EDC79 /* RulesPresenterIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135077B2848E19E003EDC79 /* RulesPresenterIMP.swift */; };
+		1135077E2848E411003EDC79 /* RulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1135077A2848E19E003EDC79 /* RulesViewController.xib */; };
+		1135077F2848E411003EDC79 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135077C2848E19E003EDC79 /* RulesViewController.swift */; };
+		113507802848E411003EDC79 /* RulesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507792848E19E003EDC79 /* RulesPresenter.swift */; };
+		113507822848E4D5003EDC79 /* RulesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507812848E4D5003EDC79 /* RulesService.swift */; };
+		113507862848E59D003EDC79 /* RulesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507852848E59C003EDC79 /* RulesViewModel.swift */; };
+		113507872848E59D003EDC79 /* RuleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507842848E59C003EDC79 /* RuleCellViewModel.swift */; };
+		1135078B2848E703003EDC79 /* RuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507892848E703003EDC79 /* RuleTableViewCell.swift */; };
+		1135078C2848E703003EDC79 /* RuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1135078A2848E703003EDC79 /* RuleTableViewCell.xib */; };
+		1135078E28490040003EDC79 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135078D28490040003EDC79 /* Toast.swift */; };
+		1135079028490227003EDC79 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135078F28490227003EDC79 /* UIView.swift */; };
 		11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440A928438FE9003111B1 /* AppDelegate.swift */; };
 		11E440B328438FEB003111B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B228438FEB003111B1 /* Assets.xcassets */; };
 		11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B428438FEB003111B1 /* LaunchScreen.storyboard */; };
@@ -72,6 +83,17 @@
 		1135076D2848B15F003EDC79 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		1135076F2848B600003EDC79 /* AddRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRules.swift; sourceTree = "<group>"; };
 		113507712848B61A003EDC79 /* DeleteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRules.swift; sourceTree = "<group>"; };
+		113507792848E19E003EDC79 /* RulesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesPresenter.swift; sourceTree = "<group>"; };
+		1135077A2848E19E003EDC79 /* RulesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesViewController.xib; sourceTree = "<group>"; };
+		1135077B2848E19E003EDC79 /* RulesPresenterIMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesPresenterIMP.swift; sourceTree = "<group>"; };
+		1135077C2848E19E003EDC79 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		113507812848E4D5003EDC79 /* RulesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesService.swift; sourceTree = "<group>"; };
+		113507842848E59C003EDC79 /* RuleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleCellViewModel.swift; sourceTree = "<group>"; };
+		113507852848E59C003EDC79 /* RulesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewModel.swift; sourceTree = "<group>"; };
+		113507892848E703003EDC79 /* RuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleTableViewCell.swift; sourceTree = "<group>"; };
+		1135078A2848E703003EDC79 /* RuleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleTableViewCell.xib; sourceTree = "<group>"; };
+		1135078D28490040003EDC79 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		1135078F28490227003EDC79 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		11E440A628438FE9003111B1 /* TwitterStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E440A928438FE9003111B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E440B228438FEB003111B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +166,37 @@
 			path = NetworkManeger;
 			sourceTree = "<group>";
 		};
+		113507782848E192003EDC79 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				113507882848E6BD003EDC79 /* Subviews */,
+				113507832848E59C003EDC79 /* ViewModel */,
+				113507792848E19E003EDC79 /* RulesPresenter.swift */,
+				1135077B2848E19E003EDC79 /* RulesPresenterIMP.swift */,
+				1135077C2848E19E003EDC79 /* RulesViewController.swift */,
+				1135077A2848E19E003EDC79 /* RulesViewController.xib */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		113507832848E59C003EDC79 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				113507852848E59C003EDC79 /* RulesViewModel.swift */,
+				113507842848E59C003EDC79 /* RuleCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		113507882848E6BD003EDC79 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				113507892848E703003EDC79 /* RuleTableViewCell.swift */,
+				1135078A2848E703003EDC79 /* RuleTableViewCell.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		11E4409D28438FE9003111B1 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +255,7 @@
 		11E440C528448043003111B1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1135078D28490040003EDC79 /* Toast.swift */,
 				11E441042844B56F003111B1 /* POPTableView */,
 				11E440C62844804D003111B1 /* Extension */,
 				11E440EF28448C0B003111B1 /* Presenter.swift */,
@@ -214,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				11E440C72844806B003111B1 /* String.swift */,
+				1135078F28490227003EDC79 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -230,6 +285,7 @@
 		11E440CA28448102003111B1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				113507782848E192003EDC79 /* Rules */,
 				11E441222844DB0A003111B1 /* TweetDetail */,
 				11E440F128449486003111B1 /* LiveTweets */,
 				11E440E628448B2D003111B1 /* Intro */,
@@ -315,6 +371,7 @@
 		11E440FA28449906003111B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				113507812848E4D5003EDC79 /* RulesService.swift */,
 				1135072828488EF9003EDC79 /* NetworkManeger */,
 				11E440FC28449931003111B1 /* LiveTweetsService.swift */,
 			);
@@ -436,11 +493,13 @@
 			files = (
 				11E441262844DB79003111B1 /* TweetDetailViewController.xib in Resources */,
 				11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */,
+				1135077E2848E411003EDC79 /* RulesViewController.xib in Resources */,
 				11E441212844C4A6003111B1 /* TweetTableViewCell.xib in Resources */,
 				11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */,
 				11E440C228448025003111B1 /* Localization.strings in Resources */,
 				11E440B328438FEB003111B1 /* Assets.xcassets in Resources */,
 				11E440F528449576003111B1 /* LiveTweetsViewController.xib in Resources */,
+				1135078C2848E703003EDC79 /* RuleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +520,7 @@
 				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
+				1135078B2848E703003EDC79 /* RuleTableViewCell.swift in Sources */,
 				11E4412A2844DC2C003111B1 /* TweetDetailPresenterIMP.swift in Sources */,
 				11E441192844B6E6003111B1 /* TweetCellViewModel.swift in Sources */,
 				11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */,
@@ -469,6 +529,8 @@
 				11E441112844B570003111B1 /* TableViewSectionModel.swift in Sources */,
 				11E441172844B6CE003111B1 /* LiveTweetsViewModel.swift in Sources */,
 				11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */,
+				113507802848E411003EDC79 /* RulesPresenter.swift in Sources */,
+				113507862848E59D003EDC79 /* RulesViewModel.swift in Sources */,
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
 				113507702848B600003EDC79 /* AddRules.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
@@ -481,13 +543,18 @@
 				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
 				11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */,
 				1135076A2848A20D003EDC79 /* NetworkRequestIMP.swift in Sources */,
+				113507822848E4D5003EDC79 /* RulesService.swift in Sources */,
 				11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */,
+				1135079028490227003EDC79 /* UIView.swift in Sources */,
 				11E441282844DBE7003111B1 /* TweetDetailPresenter.swift in Sources */,
 				1135075D2848A20D003EDC79 /* HTTPBodyEncoding.swift in Sources */,
+				113507872848E59D003EDC79 /* RuleCellViewModel.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
+				1135077D2848E411003EDC79 /* RulesPresenterIMP.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
 				113507722848B61A003EDC79 /* DeleteRules.swift in Sources */,
+				1135078E28490040003EDC79 /* Toast.swift in Sources */,
 				11E4410F2844B570003111B1 /* TableViewSection.swift in Sources */,
 				11E4410E2844B570003111B1 /* TableViewDataSource.swift in Sources */,
 				11E440F428449576003111B1 /* LiveTweetsViewController.swift in Sources */,
@@ -496,6 +563,7 @@
 				11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */,
 				11E440EC28448B2E003111B1 /* IntroViewController.swift in Sources */,
 				11E440FD28449931003111B1 /* LiveTweetsService.swift in Sources */,
+				1135077F2848E411003EDC79 /* RulesViewController.swift in Sources */,
 				1135075B2848A20D003EDC79 /* NetworkResponseStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

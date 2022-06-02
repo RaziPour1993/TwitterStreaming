@@ -8,6 +8,15 @@
 import Foundation
 
 struct DeleteRules: Codable {
+    var delete: Delete
+    
+    init(rules: Rules) {
+        self.delete = Delete(rules: rules)
+    }
+}
+
+
+struct Delete: Codable {
     var values: [String] = []
     
     init(rules: Rules) {
@@ -15,5 +24,4 @@ struct DeleteRules: Codable {
             values.append(item.value)
         }
     }
-    
 }

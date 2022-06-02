@@ -25,6 +25,13 @@ final class MainScreenFactoryIMP: ScreenFactory {
         return screen
     }
     
+    func makeRulesScreen(delegate: RulesScreenDelegate) -> RulesViewController {
+        let service = RulesServiceIMP()
+        let presenter = RulesPresenterIMP(service, delegate)
+        let screen = RulesViewController(presenter)
+        return screen
+    }
+    
 }
 
 

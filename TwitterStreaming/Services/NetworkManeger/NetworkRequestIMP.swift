@@ -48,7 +48,7 @@ extension NetworkRequestIMP: NetworkRequest {
         case .retrieveRules:
             return .get
         case .deleteRules:
-            return .delete
+            return .post
         case .addRules:
             return .post
         }

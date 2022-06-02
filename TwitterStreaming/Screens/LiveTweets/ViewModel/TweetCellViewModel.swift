@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 protocol TweetCellViewModelDelegate: AnyObject {
     func didSelect(tweet: TweetCellViewModel)

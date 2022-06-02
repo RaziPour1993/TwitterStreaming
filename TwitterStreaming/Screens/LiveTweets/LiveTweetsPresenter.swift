@@ -9,6 +9,7 @@ import Foundation
 
 protocol LiveTweetsPresenter: Presenter, LiveTweetsScreenManeger {
     func set(view: LiveTweetsPresentingView)
+    func didTapRules()
 }
 
 protocol LiveTweetsPresentingView: PresentingView {
@@ -17,6 +18,7 @@ protocol LiveTweetsPresentingView: PresentingView {
 
 protocol LiveTweetsScreenDelegate: ScreenDelegate {
     func didSelect(tweet: Tweet)
+    func openRules()
 }
 
 protocol LiveTweetsScreenManeger: ScreenManeger {

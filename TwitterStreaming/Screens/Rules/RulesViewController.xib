@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveTweetsViewController" customModule="TwitterStreaming" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RulesViewController">
             <connections>
-                <outlet property="tableView" destination="1hO-a9-kg3" id="dKq-3B-kWU"/>
+                <outlet property="tableView" destination="KUh-G5-3Ub" id="5ue-5G-C6m"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,21 +19,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1hO-a9-kg3">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KUh-G5-3Ub">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1hO-a9-kg3" secondAttribute="trailing" id="7Zp-yi-Ndx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1hO-a9-kg3" secondAttribute="bottom" id="DP6-yk-N2o"/>
-                <constraint firstItem="1hO-a9-kg3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="T0Q-Mc-Zdn"/>
-                <constraint firstItem="1hO-a9-kg3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hjl-qg-cGB"/>
+                <constraint firstItem="KUh-G5-3Ub" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ke8-qd-82w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KUh-G5-3Ub" secondAttribute="bottom" id="RcD-Yr-IoV"/>
+                <constraint firstItem="KUh-G5-3Ub" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cj2-PA-v9n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KUh-G5-3Ub" secondAttribute="trailing" id="o7b-E0-Z7y"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="96"/>
+            <point key="canvasLocation" x="139" y="125"/>
         </view>
     </objects>
     <resources>
