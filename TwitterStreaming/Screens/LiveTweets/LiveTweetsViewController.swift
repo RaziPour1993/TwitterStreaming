@@ -37,7 +37,8 @@ class LiveTweetsViewController: BaseViewController {
 extension LiveTweetsViewController {
     
     func config() {
-        
+        let rulesBarButtonItem = UIBarButtonItem(title: "Rules", style: .plain, target: self, action: #selector(rulesButtonAction))
+        self.navigationItem.rightBarButtonItems = [rulesBarButtonItem]
     }
     
     func viewConfig() {
@@ -55,6 +56,10 @@ extension LiveTweetsViewController {
         self.tableView.sectionHeaderHeight = 0.0
         self.tableView.sectionFooterHeight = 0.0
         self.tableView.register(TweetTableViewCell.self)
+    }
+    
+    @objc func rulesButtonAction() {
+        self.presenter.didTapRules()
     }
     
 }

@@ -34,15 +34,15 @@ extension LiveTweetsPresenterIMP: LiveTweetsPresenter {
     
     func present() {
         let items = [Tweet(), Tweet(), Tweet(), Tweet()]
-//        self.tweetsViewModel = TweetsViewModel(items, delegate: self)
-        
-        self.service.retrieveRules { result in
-            debugPrint(result)
-        }
+        //        self.tweetsViewModel = TweetsViewModel(items, delegate: self)
     }
     
     func set(view: LiveTweetsPresentingView) {
         self.view = view
+    }
+    
+    func didTapRules() {
+        self.delegate?.openRules()
     }
     
 }
