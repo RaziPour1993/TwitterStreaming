@@ -41,6 +41,10 @@ extension LiveTweetsCoordinator: LiveTweetsScreenDelegate {
         self.displayTweetDetailScreen(tweet: tweet)
     }
     
+    func openRules() {
+        self.displayRulesScreen()
+    }
+    
     func displayLiveTweetsScreen() {
         let screen = self.screenFactory.makeLiveTweetsScreen(delegate: self)
         self.router.setRoot(screen, with: true)
@@ -48,6 +52,13 @@ extension LiveTweetsCoordinator: LiveTweetsScreenDelegate {
     
 }
 
+extension LiveTweetsCoordinator: RulesScreenDelegate {
+    
+    func displayRulesScreen() {
+        let screen = self.screenFactory.makeRulesScreen(delegate: self)
+        self.router.push(screen)
+    }
+}
 
 extension LiveTweetsCoordinator: TweetDetailScreenDelegate {
     
