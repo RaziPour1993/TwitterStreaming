@@ -18,6 +18,12 @@ struct Rule: Codable {
         case id, value, tag
     }
     
+    init(value: String, tag: String){
+        self.value = value
+        self.tag = tag
+        self.id = nil
+    }
+    
 }
 
 struct RetrieveRules: Codable {
