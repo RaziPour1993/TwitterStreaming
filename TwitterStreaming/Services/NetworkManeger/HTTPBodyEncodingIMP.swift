@@ -1,9 +1,5 @@
 import Foundation
 
-protocol HTTPBodyEncoding {
-    func encode<T: Encodable>(parameters: T) -> Data?
-}
-
 struct URLEncoding: HTTPBodyEncoding {
     
     func encode<T>(parameters: T) -> Data? where T : Encodable {

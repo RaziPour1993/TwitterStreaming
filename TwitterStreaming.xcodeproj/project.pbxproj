@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1135075A2848A20D003EDC79 /* NetworkManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073B2848A20C003EDC79 /* NetworkManeger.swift */; };
+		1135075A2848A20D003EDC79 /* NetworkManegerRequestIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073B2848A20C003EDC79 /* NetworkManegerRequestIMP.swift */; };
 		1135075B2848A20D003EDC79 /* NetworkResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */; };
-		1135075C2848A20D003EDC79 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073D2848A20C003EDC79 /* NetworkRequest.swift */; };
-		1135075D2848A20D003EDC79 /* HTTPBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073E2848A20C003EDC79 /* HTTPBodyEncoding.swift */; };
-		1135075E2848A20D003EDC79 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073F2848A20C003EDC79 /* Parser.swift */; };
-		1135076A2848A20D003EDC79 /* NetworkRequestIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507592848A20D003EDC79 /* NetworkRequestIMP.swift */; };
+		1135075D2848A20D003EDC79 /* HTTPBodyEncodingIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073E2848A20C003EDC79 /* HTTPBodyEncodingIMP.swift */; };
+		1135075E2848A20D003EDC79 /* ParserIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135073F2848A20C003EDC79 /* ParserIMP.swift */; };
+		1135076A2848A20D003EDC79 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507592848A20D003EDC79 /* NetworkRequest.swift */; };
 		1135076E2848B15F003EDC79 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135076D2848B15F003EDC79 /* Rule.swift */; };
 		113507702848B600003EDC79 /* AddRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135076F2848B600003EDC79 /* AddRules.swift */; };
 		113507722848B61A003EDC79 /* DeleteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507712848B61A003EDC79 /* DeleteRules.swift */; };
@@ -26,7 +25,17 @@
 		1135078B2848E703003EDC79 /* RuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113507892848E703003EDC79 /* RuleTableViewCell.swift */; };
 		1135078C2848E703003EDC79 /* RuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1135078A2848E703003EDC79 /* RuleTableViewCell.xib */; };
 		1135078E28490040003EDC79 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135078D28490040003EDC79 /* Toast.swift */; };
-		1135079028490227003EDC79 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135078F28490227003EDC79 /* UIView.swift */; };
+		11579FFD28494C3B00744BC1 /* StreamManagerRequestIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11579FFB28494C3B00744BC1 /* StreamManagerRequestIMP.swift */; };
+		1166D940284A12F80042D976 /* StreamFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D93E284A113B0042D976 /* StreamFilter.swift */; };
+		1166D942284A29040042D976 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D941284A29040042D976 /* Error.swift */; };
+		1166D947284B23DB0042D976 /* NetworkManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D946284B23DB0042D976 /* NetworkManeger.swift */; };
+		1166D949284B23FE0042D976 /* HTTPBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D948284B23FE0042D976 /* HTTPBodyEncoding.swift */; };
+		1166D94B284B242F0042D976 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D94A284B242F0042D976 /* Parser.swift */; };
+		1166D94D284B32370042D976 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D94C284B32370042D976 /* Image.swift */; };
+		1166D951284B42280042D976 /* TweetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D94F284B42280042D976 /* TweetDetailViewModel.swift */; };
+		1166D952284B42280042D976 /* TweetDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D950284B42280042D976 /* TweetDetailCellViewModel.swift */; };
+		1166D956284B42E20042D976 /* TweetDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166D954284B42E20042D976 /* TweetDetailTableViewCell.swift */; };
+		1166D957284B42E20042D976 /* TweetDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1166D955284B42E20042D976 /* TweetDetailTableViewCell.xib */; };
 		11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E440A928438FE9003111B1 /* AppDelegate.swift */; };
 		11E440B328438FEB003111B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B228438FEB003111B1 /* Assets.xcassets */; };
 		11E440B628438FEB003111B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E440B428438FEB003111B1 /* LaunchScreen.storyboard */; };
@@ -74,12 +83,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1135073B2848A20C003EDC79 /* NetworkManeger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManeger.swift; sourceTree = "<group>"; };
+		1135073B2848A20C003EDC79 /* NetworkManegerRequestIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManegerRequestIMP.swift; sourceTree = "<group>"; };
 		1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseStatus.swift; sourceTree = "<group>"; };
-		1135073D2848A20C003EDC79 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		1135073E2848A20C003EDC79 /* HTTPBodyEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBodyEncoding.swift; sourceTree = "<group>"; };
-		1135073F2848A20C003EDC79 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		113507592848A20D003EDC79 /* NetworkRequestIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestIMP.swift; sourceTree = "<group>"; };
+		1135073E2848A20C003EDC79 /* HTTPBodyEncodingIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBodyEncodingIMP.swift; sourceTree = "<group>"; };
+		1135073F2848A20C003EDC79 /* ParserIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserIMP.swift; sourceTree = "<group>"; };
+		113507592848A20D003EDC79 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		1135076D2848B15F003EDC79 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		1135076F2848B600003EDC79 /* AddRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRules.swift; sourceTree = "<group>"; };
 		113507712848B61A003EDC79 /* DeleteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRules.swift; sourceTree = "<group>"; };
@@ -93,7 +101,17 @@
 		113507892848E703003EDC79 /* RuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleTableViewCell.swift; sourceTree = "<group>"; };
 		1135078A2848E703003EDC79 /* RuleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleTableViewCell.xib; sourceTree = "<group>"; };
 		1135078D28490040003EDC79 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		1135078F28490227003EDC79 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		11579FFB28494C3B00744BC1 /* StreamManagerRequestIMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamManagerRequestIMP.swift; sourceTree = "<group>"; };
+		1166D93E284A113B0042D976 /* StreamFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamFilter.swift; sourceTree = "<group>"; };
+		1166D941284A29040042D976 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		1166D946284B23DB0042D976 /* NetworkManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManeger.swift; sourceTree = "<group>"; };
+		1166D948284B23FE0042D976 /* HTTPBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBodyEncoding.swift; sourceTree = "<group>"; };
+		1166D94A284B242F0042D976 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		1166D94C284B32370042D976 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		1166D94F284B42280042D976 /* TweetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewModel.swift; sourceTree = "<group>"; };
+		1166D950284B42280042D976 /* TweetDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailCellViewModel.swift; sourceTree = "<group>"; };
+		1166D954284B42E20042D976 /* TweetDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailTableViewCell.swift; sourceTree = "<group>"; };
+		1166D955284B42E20042D976 /* TweetDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetDetailTableViewCell.xib; sourceTree = "<group>"; };
 		11E440A628438FE9003111B1 /* TwitterStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E440A928438FE9003111B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E440B228438FEB003111B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,12 +174,11 @@
 		1135072828488EF9003EDC79 /* NetworkManeger */ = {
 			isa = PBXGroup;
 			children = (
-				1135073E2848A20C003EDC79 /* HTTPBodyEncoding.swift */,
-				1135073B2848A20C003EDC79 /* NetworkManeger.swift */,
-				1135073D2848A20C003EDC79 /* NetworkRequest.swift */,
-				113507592848A20D003EDC79 /* NetworkRequestIMP.swift */,
-				1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */,
-				1135073F2848A20C003EDC79 /* Parser.swift */,
+				11579FFB28494C3B00744BC1 /* StreamManagerRequestIMP.swift */,
+				1135073B2848A20C003EDC79 /* NetworkManegerRequestIMP.swift */,
+				1135073E2848A20C003EDC79 /* HTTPBodyEncodingIMP.swift */,
+				1135073F2848A20C003EDC79 /* ParserIMP.swift */,
+				1166D945284B23C30042D976 /* POP */,
 			);
 			path = NetworkManeger;
 			sourceTree = "<group>";
@@ -195,6 +212,46 @@
 				1135078A2848E703003EDC79 /* RuleTableViewCell.xib */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		1166D945284B23C30042D976 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				1135073C2848A20C003EDC79 /* NetworkResponseStatus.swift */,
+				113507592848A20D003EDC79 /* NetworkRequest.swift */,
+				1166D946284B23DB0042D976 /* NetworkManeger.swift */,
+				1166D948284B23FE0042D976 /* HTTPBodyEncoding.swift */,
+				1166D94A284B242F0042D976 /* Parser.swift */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
+		1166D94E284B42280042D976 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1166D94F284B42280042D976 /* TweetDetailViewModel.swift */,
+				1166D950284B42280042D976 /* TweetDetailCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1166D953284B42C40042D976 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				1166D954284B42E20042D976 /* TweetDetailTableViewCell.swift */,
+				1166D955284B42E20042D976 /* TweetDetailTableViewCell.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		1166D958284B775D0042D976 /* IMP */ = {
+			isa = PBXGroup;
+			children = (
+				11E440D828448AA5003111B1 /* MainRouterIMP.swift */,
+				11E440CF28448AA5003111B1 /* MainCoordinatorFactorIMP.swift */,
+				11E440D228448AA5003111B1 /* MainScreenFactoryIMP.swift */,
+			);
+			path = IMP;
 			sourceTree = "<group>";
 		};
 		11E4409D28438FE9003111B1 = {
@@ -255,11 +312,11 @@
 		11E440C528448043003111B1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1135078D28490040003EDC79 /* Toast.swift */,
-				11E441042844B56F003111B1 /* POPTableView */,
-				11E440C62844804D003111B1 /* Extension */,
-				11E440EF28448C0B003111B1 /* Presenter.swift */,
 				11E441022844A499003111B1 /* BaseViewController.swift */,
+				11E440EF28448C0B003111B1 /* Presenter.swift */,
+				1135078D28490040003EDC79 /* Toast.swift */,
+				11E440C62844804D003111B1 /* Extension */,
+				11E441042844B56F003111B1 /* POPTableView */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -267,8 +324,9 @@
 		11E440C62844804D003111B1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1166D941284A29040042D976 /* Error.swift */,
 				11E440C72844806B003111B1 /* String.swift */,
-				1135078F28490227003EDC79 /* UIView.swift */,
+				1166D94C284B32370042D976 /* Image.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -297,9 +355,10 @@
 		11E440CB28448A7E003111B1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */,
 				11E440DA28448AA5003111B1 /* IntroCoordinator.swift */,
+				11E4410028449AF8003111B1 /* LiveTweetsCoordinator.swift */,
 				11E440CC28448AA5003111B1 /* MainCoordinator.swift */,
+				1166D958284B775D0042D976 /* IMP */,
 				11E440CD28448AA5003111B1 /* Manager */,
 			);
 			path = Coordinator;
@@ -308,40 +367,13 @@
 		11E440CD28448AA5003111B1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				11E440D528448AA5003111B1 /* Router */,
-				11E440CE28448AA5003111B1 /* CoordinatorFactory */,
-				11E440D128448AA5003111B1 /* ScreenFactory */,
+				11E440D628448AA5003111B1 /* Presentable.swift */,
+				11E440D728448AA5003111B1 /* Router.swift */,
+				11E440D028448AA5003111B1 /* CoordinatorFactory.swift */,
+				11E440D328448AA5003111B1 /* ScreenFactory.swift */,
 				11E440D428448AA5003111B1 /* Coordinator.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		11E440CE28448AA5003111B1 /* CoordinatorFactory */ = {
-			isa = PBXGroup;
-			children = (
-				11E440CF28448AA5003111B1 /* MainCoordinatorFactorIMP.swift */,
-				11E440D028448AA5003111B1 /* CoordinatorFactory.swift */,
-			);
-			path = CoordinatorFactory;
-			sourceTree = "<group>";
-		};
-		11E440D128448AA5003111B1 /* ScreenFactory */ = {
-			isa = PBXGroup;
-			children = (
-				11E440D228448AA5003111B1 /* MainScreenFactoryIMP.swift */,
-				11E440D328448AA5003111B1 /* ScreenFactory.swift */,
-			);
-			path = ScreenFactory;
-			sourceTree = "<group>";
-		};
-		11E440D528448AA5003111B1 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				11E440D628448AA5003111B1 /* Presentable.swift */,
-				11E440D728448AA5003111B1 /* Router.swift */,
-				11E440D828448AA5003111B1 /* MainRouterIMP.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		11E440E628448B2D003111B1 /* Intro */ = {
@@ -371,9 +403,9 @@
 		11E440FA28449906003111B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				11E440FC28449931003111B1 /* LiveTweetsService.swift */,
 				113507812848E4D5003EDC79 /* RulesService.swift */,
 				1135072828488EF9003EDC79 /* NetworkManeger */,
-				11E440FC28449931003111B1 /* LiveTweetsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -409,6 +441,7 @@
 				1135076D2848B15F003EDC79 /* Rule.swift */,
 				1135076F2848B600003EDC79 /* AddRules.swift */,
 				113507712848B61A003EDC79 /* DeleteRules.swift */,
+				1166D93E284A113B0042D976 /* StreamFilter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -425,6 +458,8 @@
 		11E441222844DB0A003111B1 /* TweetDetail */ = {
 			isa = PBXGroup;
 			children = (
+				1166D953284B42C40042D976 /* Subviews */,
+				1166D94E284B42280042D976 /* ViewModel */,
 				11E441272844DBE7003111B1 /* TweetDetailPresenter.swift */,
 				11E441292844DC2C003111B1 /* TweetDetailPresenterIMP.swift */,
 				11E441232844DB79003111B1 /* TweetDetailViewController.swift */,
@@ -497,6 +532,7 @@
 				11E441212844C4A6003111B1 /* TweetTableViewCell.xib in Resources */,
 				11E440EE28448B2E003111B1 /* IntroViewController.xib in Resources */,
 				11E440C228448025003111B1 /* Localization.strings in Resources */,
+				1166D957284B42E20042D976 /* TweetDetailTableViewCell.xib in Resources */,
 				11E440B328438FEB003111B1 /* Assets.xcassets in Resources */,
 				11E440F528449576003111B1 /* LiveTweetsViewController.xib in Resources */,
 				1135078C2848E703003EDC79 /* RuleTableViewCell.xib in Resources */,
@@ -514,9 +550,11 @@
 				11E441202844C4A6003111B1 /* TweetTableViewCell.swift in Sources */,
 				11E440E228448AA6003111B1 /* Router.swift in Sources */,
 				11E440C82844806B003111B1 /* String.swift in Sources */,
+				1166D952284B42280042D976 /* TweetDetailCellViewModel.swift in Sources */,
+				1166D951284B42280042D976 /* TweetDetailViewModel.swift in Sources */,
 				11E440E328448AA6003111B1 /* MainRouterIMP.swift in Sources */,
 				11E4410128449AF8003111B1 /* LiveTweetsCoordinator.swift in Sources */,
-				1135075A2848A20D003EDC79 /* NetworkManeger.swift in Sources */,
+				1135075A2848A20D003EDC79 /* NetworkManegerRequestIMP.swift in Sources */,
 				11E440F92844977B003111B1 /* LiveTweetsPresenterIMP.swift in Sources */,
 				11E440ED28448B2E003111B1 /* IntroPresenterIMP.swift in Sources */,
 				11E440DB28448AA5003111B1 /* MainCoordinator.swift in Sources */,
@@ -524,41 +562,47 @@
 				11E4412A2844DC2C003111B1 /* TweetDetailPresenterIMP.swift in Sources */,
 				11E441192844B6E6003111B1 /* TweetCellViewModel.swift in Sources */,
 				11E441142844B570003111B1 /* TableViewFooterSectionModel.swift in Sources */,
+				1166D947284B23DB0042D976 /* NetworkManeger.swift in Sources */,
 				11E441122844B570003111B1 /* TableViewHeaderSection.swift in Sources */,
 				11E4410D2844B570003111B1 /* TableViewHelper.swift in Sources */,
+				1166D949284B23FE0042D976 /* HTTPBodyEncoding.swift in Sources */,
 				11E441112844B570003111B1 /* TableViewSectionModel.swift in Sources */,
+				11579FFD28494C3B00744BC1 /* StreamManagerRequestIMP.swift in Sources */,
 				11E441172844B6CE003111B1 /* LiveTweetsViewModel.swift in Sources */,
 				11E440F728449766003111B1 /* LiveTweetsPresenter.swift in Sources */,
 				113507802848E411003EDC79 /* RulesPresenter.swift in Sources */,
 				113507862848E59D003EDC79 /* RulesViewModel.swift in Sources */,
 				11E440DE28448AA5003111B1 /* MainScreenFactoryIMP.swift in Sources */,
+				1166D94D284B32370042D976 /* Image.swift in Sources */,
 				113507702848B600003EDC79 /* AddRules.swift in Sources */,
 				11E440E128448AA6003111B1 /* Presentable.swift in Sources */,
-				1135075E2848A20D003EDC79 /* Parser.swift in Sources */,
+				1135075E2848A20D003EDC79 /* ParserIMP.swift in Sources */,
 				11E440DC28448AA5003111B1 /* MainCoordinatorFactorIMP.swift in Sources */,
 				11E441252844DB79003111B1 /* TweetDetailViewController.swift in Sources */,
 				11E441132844B570003111B1 /* TableViewModel.swift in Sources */,
 				11E440DD28448AA5003111B1 /* CoordinatorFactory.swift in Sources */,
+				1166D94B284B242F0042D976 /* Parser.swift in Sources */,
 				1135076E2848B15F003EDC79 /* Rule.swift in Sources */,
 				11E441032844A499003111B1 /* BaseViewController.swift in Sources */,
 				11E4411C2844BC4F003111B1 /* Tweet.swift in Sources */,
-				1135076A2848A20D003EDC79 /* NetworkRequestIMP.swift in Sources */,
+				1135076A2848A20D003EDC79 /* NetworkRequest.swift in Sources */,
 				113507822848E4D5003EDC79 /* RulesService.swift in Sources */,
 				11E441102844B570003111B1 /* TableViewCellModel.swift in Sources */,
-				1135079028490227003EDC79 /* UIView.swift in Sources */,
 				11E441282844DBE7003111B1 /* TweetDetailPresenter.swift in Sources */,
-				1135075D2848A20D003EDC79 /* HTTPBodyEncoding.swift in Sources */,
+				1135075D2848A20D003EDC79 /* HTTPBodyEncodingIMP.swift in Sources */,
 				113507872848E59D003EDC79 /* RuleCellViewModel.swift in Sources */,
 				11E440EB28448B2E003111B1 /* IntroPresenter.swift in Sources */,
 				1135077D2848E411003EDC79 /* RulesPresenterIMP.swift in Sources */,
 				11E440DF28448AA5003111B1 /* ScreenFactory.swift in Sources */,
+				1166D940284A12F80042D976 /* StreamFilter.swift in Sources */,
 				11E440AA28438FE9003111B1 /* AppDelegate.swift in Sources */,
 				113507722848B61A003EDC79 /* DeleteRules.swift in Sources */,
 				1135078E28490040003EDC79 /* Toast.swift in Sources */,
 				11E4410F2844B570003111B1 /* TableViewSection.swift in Sources */,
 				11E4410E2844B570003111B1 /* TableViewDataSource.swift in Sources */,
 				11E440F428449576003111B1 /* LiveTweetsViewController.swift in Sources */,
-				1135075C2848A20D003EDC79 /* NetworkRequest.swift in Sources */,
+				1166D956284B42E20042D976 /* TweetDetailTableViewCell.swift in Sources */,
+				1166D942284A29040042D976 /* Error.swift in Sources */,
 				11E440E028448AA6003111B1 /* Coordinator.swift in Sources */,
 				11E440E528448AA6003111B1 /* IntroCoordinator.swift in Sources */,
 				11E440EC28448B2E003111B1 /* IntroViewController.swift in Sources */,
@@ -719,6 +763,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -747,6 +792,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

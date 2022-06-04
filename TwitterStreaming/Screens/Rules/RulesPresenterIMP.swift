@@ -41,7 +41,6 @@ extension RulesPresenterIMP: RulesPresenter {
     }
     
     func didAddRule(value: String, tag: String) {
-        
         let item = AddRules(item: Rule(value: value, tag: tag))
         self.view?.willLoadingData()
         self.service.addRules(info: item) { result in

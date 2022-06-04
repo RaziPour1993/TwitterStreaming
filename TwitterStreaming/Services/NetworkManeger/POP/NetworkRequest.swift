@@ -1,8 +1,29 @@
 import Foundation
 
+protocol NetworkRequest {
+    var pathURL: URL? { get }
+    var method: HTTPMethod { get }
+    var headers: HTTPHeaders? { get }
+    var body: HTTPBody? { get }
+    var bodyEncoding: HTTPBodyEncoding? { get }
+    var request: URLRequest? { get }
+}
+
+enum HTTPMethod : String {
+    case get     = "GET"
+    case post    = "POST"
+    case put     = "PUT"
+    case patch   = "PATCH"
+    case delete  = "DELETE"
+}
+
+typealias HTTPBody = Data
+typealias HTTPHeaders = [String : String]
+
+
 enum URLs {
     case server
-
+    
     var link: String {
         switch self {
         case .server: return "https://api.twitter.com/2/tweets/search/stream"
@@ -14,6 +35,7 @@ enum NetworkRequestIMP {
     case addRules(_ info: AddRules)
     case deleteRules(_ info: DeleteRules)
     case retrieveRules
+    case stream(_ filter: StreamFilter)
 }
 
 let token = "AAAAAAAAAAAAAAAAAAAAAK%2BeUgEAAAAAcBPofcvampMachJq8uDh%2F2DrXsA%3DSOlOZ1jP9FAeqCvoqx6Mqc9B87r0OgjZPpOsYJexFzJpUQEfLw"
@@ -24,16 +46,18 @@ extension NetworkRequestIMP: NetworkRequest {
         return URLs.server.link
     }
     
-
+    
     var pathURL: URL? {
         var url = ""
-
+        
         switch self {
         case .addRules : url = "/rules"
         case .deleteRules: url = "/rules"
         case .retrieveRules: url = "/rules"
+        case .stream:
+            url = "?expansions=author_id&tweet.fields=created_at,text,entities,public_metrics,source&user.fields=name,username,verified,profile_image_url,location,url,public_metrics&media.fields=type,url,public_metrics&place.fields=full_name,country"
         }
-        
+
         guard let strURL = (self.enviroment + url).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let urlValid = URL(string: strURL) else {
             return nil
         }
@@ -45,11 +69,9 @@ extension NetworkRequestIMP: NetworkRequest {
     
     var method: HTTPMethod {
         switch  self {
-        case .retrieveRules:
+        case .retrieveRules, .stream:
             return .get
-        case .deleteRules:
-            return .post
-        case .addRules:
+        case .addRules, .deleteRules:
             return .post
         }
     }
@@ -59,8 +81,10 @@ extension NetworkRequestIMP: NetworkRequest {
         var data: Data?
         
         switch self {
-        case .addRules(let info): data = self.bodyEncoding?.encode(parameters: info)
-        case .deleteRules(let info): data = self.bodyEncoding?.encode(parameters: info)
+        case .addRules(let info):
+            data = self.bodyEncoding?.encode(parameters: info)
+        case .deleteRules(let info):
+            data = self.bodyEncoding?.encode(parameters: info)
         default: data = nil
         }
         
@@ -88,6 +112,7 @@ extension NetworkRequestIMP: NetworkRequest {
         request.httpBody = self.body
         request.headers = self.headers
         request.httpMethod = self.method.rawValue
+        
         return request
     }
     

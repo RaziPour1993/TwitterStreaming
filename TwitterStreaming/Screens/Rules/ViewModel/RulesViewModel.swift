@@ -13,7 +13,7 @@ protocol RulesViewModelDelegate: AnyObject {
 
 class RulesViewModel: TableViewModel {
     
-    var sections: [TableViewSectionModel]!
+    var sections: [TableViewSectionModel]
     
     private weak var delegate: RulesViewModelDelegate?
     
@@ -23,7 +23,7 @@ class RulesViewModel: TableViewModel {
     }
     
     init(_ rules: Rules, delegate: RulesViewModelDelegate?) {
-        
+        self.sections = []
         self.delegate = delegate
         let items =  rules.map { item in
             return RuleCellViewModel(item, delegate: self)

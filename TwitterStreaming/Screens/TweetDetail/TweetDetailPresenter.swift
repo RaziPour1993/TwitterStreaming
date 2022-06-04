@@ -12,7 +12,7 @@ protocol TweetDetailPresenter: Presenter {
 }
 
 protocol TweetDetailPresentingView: PresentingView {
-    func updated(tweetDetail viewModel: TableViewModel)
+    func reload(tweetDetail viewModel: TableViewModel)
 }
 
 protocol TweetDetailScreenDelegate: ScreenDelegate {

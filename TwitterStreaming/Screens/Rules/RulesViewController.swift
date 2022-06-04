@@ -11,6 +11,7 @@ class RulesViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     var presenter: RulesPresenter!
     var tableViewDataSource: TableViewDataSource!
     
@@ -29,11 +30,7 @@ class RulesViewController: BaseViewController {
         config()
         viewConfig()
         tableViewConfig()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.presenter.present()
+        presenter.present()
     }
     
 }
@@ -42,7 +39,13 @@ extension RulesViewController {
     
     func config() {
         let addRuleBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus.app"), style: .plain, target: self, action: #selector(addRuleButtonAction))
-        self.navigationItem.rightBarButtonItems = [addRuleBarButtonItem]
+        
+        self.activityIndicator.color = UIColor.systemBlue
+        let activityIndicatorBarButtonItem = UIBarButtonItem(customView: activityIndicator)
+        activityIndicator.stopAnimating()
+        
+        self.navigationItem.rightBarButtonItems = [addRuleBarButtonItem, activityIndicatorBarButtonItem]
+        
     }
     
     func viewConfig() {
@@ -66,15 +69,15 @@ extension RulesViewController {
     @objc func addRuleButtonAction() {
         let alert = UIAlertController(title: title, message: "Please enter value and tag", preferredStyle: .alert)
         alert.addTextField() { newTextField in
-            newTextField.placeholder = "Value"
+            newTextField.placeholder = "Value".localized
         }
         
         alert.addTextField() { newTextField in
-            newTextField.placeholder = "Tag"
+            newTextField.placeholder = "Tag".localized
         }
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in })
-        alert.addAction(UIAlertAction(title: "Add", style: .default) { action in
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .cancel) { _ in })
+        alert.addAction(UIAlertAction(title: "Add".localized, style: .default) { action in
             let textFields = alert.textFields
             guard let value = textFields?.first?.text, !value.isEmpty , let tag = textFields?.last?.text, !tag.isEmpty else {
                 return
@@ -92,6 +95,14 @@ extension RulesViewController: RulesPresentingView {
     func updated(rules viewModel: TableViewModel) {
         self.tableViewDataSource.viewModel = viewModel
         self.tableView.reloadData()
+    }
+    
+    func willLoadingData() {
+        self.activityIndicator.startAnimating()
+    }
+    
+    func didLoadingData() {
+        self.activityIndicator.stopAnimating()
     }
     
 }

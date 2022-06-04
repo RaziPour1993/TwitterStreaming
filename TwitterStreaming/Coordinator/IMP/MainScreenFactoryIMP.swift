@@ -13,7 +13,7 @@ final class MainScreenFactoryIMP: ScreenFactory {
     }
     
     func makeLiveTweetsScreen(delegate: LiveTweetsScreenDelegate) -> LiveTweetsViewController {
-        let service = LiveTweetsServiceIMP()
+        let service = LiveTweetsServiceNetworkIMP()
         let presenter = LiveTweetsPresenterIMP(service, delegate)
         let screen = LiveTweetsViewController(presenter)
         return screen
@@ -26,7 +26,7 @@ final class MainScreenFactoryIMP: ScreenFactory {
     }
     
     func makeRulesScreen(delegate: RulesScreenDelegate) -> RulesViewController {
-        let service = RulesServiceIMP()
+        let service = RulesServiceNetworkIMP()
         let presenter = RulesPresenterIMP(service, delegate)
         let screen = RulesViewController(presenter)
         return screen

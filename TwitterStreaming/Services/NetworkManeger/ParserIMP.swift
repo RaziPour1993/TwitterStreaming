@@ -1,8 +1,6 @@
 import Foundation
 
-protocol Parser {
-    func parse<T: Decodable>(data: Data?)-> T?
-}
+
 
 class ParserIMP: Parser  {
     

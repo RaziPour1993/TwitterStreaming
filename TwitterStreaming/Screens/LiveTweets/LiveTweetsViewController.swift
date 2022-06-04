@@ -8,11 +8,12 @@
 import UIKit
 
 class LiveTweetsViewController: BaseViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var presenter: LiveTweetsPresenter!
     var tableViewDataSource: TableViewDataSource!
+    let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     
     init(_ presenter: LiveTweetsPresenter) {
         super.init(nibName: nil, bundle: nil)
@@ -39,6 +40,15 @@ extension LiveTweetsViewController {
     func config() {
         let rulesBarButtonItem = UIBarButtonItem(title: "Rules", style: .plain, target: self, action: #selector(rulesButtonAction))
         self.navigationItem.rightBarButtonItems = [rulesBarButtonItem]
+        
+        self.activityIndicator.color = UIColor.systemBlue
+        let activityIndicatorBarButtonItem = UIBarButtonItem(customView: activityIndicator)
+        activityIndicator.stopAnimating()
+        
+        let retryBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "repeat"), style: .plain, target: self, action: #selector(retryButtonAction))
+        self.navigationItem.leftBarButtonItems = [retryBarButtonItem, activityIndicatorBarButtonItem]
+        
+        
     }
     
     func viewConfig() {
@@ -56,20 +66,39 @@ extension LiveTweetsViewController {
         self.tableView.sectionHeaderHeight = 0.0
         self.tableView.sectionFooterHeight = 0.0
         self.tableView.register(TweetTableViewCell.self)
+        self.tableView.reloadData()
     }
     
     @objc func rulesButtonAction() {
         self.presenter.didTapRules()
     }
     
+    @objc func retryButtonAction() {
+        self.presenter.didTapRefresh()
+    }
+    
 }
 
 extension LiveTweetsViewController: LiveTweetsPresentingView {
     
-    func updated(tweets viewModel: TableViewModel) {
+    func reload(tweets viewModel: TableViewModel) {
         self.tableViewDataSource.viewModel = viewModel
         self.tableView.reloadData()
     }
     
+    func update(tweets viewModel: TableViewModel, indexPaths: [IndexPath]) {
+        self.tableViewDataSource.viewModel = viewModel
+        self.tableView?.beginUpdates()
+        self.tableView?.insertRows(at: indexPaths, with: .top)
+        self.tableView?.endUpdates()
+    }
+    
+    func didLoadingData() {
+        self.activityIndicator.stopAnimating()
+    }
+    
+    func willLoadingData() {
+        self.activityIndicator.startAnimating()
+    }
     
 }
