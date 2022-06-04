@@ -22,11 +22,11 @@ protocol ScreenManeger: AnyObject {
 extension PresentingView where Self: UIViewController {
     
     func willLoadingData() {
-        self.view.showBlurLoader()
+        
     }
     
     func didLoadingData() {
-        self.view?.removeBluerLoader()
+        
     }
     
     func warning(message: String) {

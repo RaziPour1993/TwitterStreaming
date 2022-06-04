@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController, PresentingView {
+class BaseViewController: UIViewController {
     
     deinit {
         debugPrint("📤 deinit \(self)")

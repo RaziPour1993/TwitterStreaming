@@ -3,7 +3,7 @@ import UIKit
 
 
 protocol TableViewModel {
-    var sections:[TableViewSectionModel]! { get }
+    var sections:[TableViewSectionModel] {set get}
 }
 
 extension TableViewModel {

@@ -3,7 +3,7 @@ import UIKit
 
 class TableViewModelTest: TableViewModel {
     
-    var sections: [TableViewSectionModel]!
+    var sections: [TableViewSectionModel]
     
     init() {
         sections = []
