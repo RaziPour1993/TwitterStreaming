@@ -15,13 +15,14 @@ class LiveTweetsPresenterIMP {
     
     var tweetsViewModel: TweetsViewModel! {
         didSet {
-            self.view?.updated(tweets: self.tweetsViewModel)
+            self.view?.reload(tweets: self.tweetsViewModel)
         }
     }
     
     init(_ service: LiveTweetsService, _ delegate: LiveTweetsScreenDelegate?) {
         self.delegate = delegate
         self.service = service
+        self.tweetsViewModel = TweetsViewModel(delegate: self)
     }
     
     deinit {
@@ -33,8 +34,7 @@ class LiveTweetsPresenterIMP {
 extension LiveTweetsPresenterIMP: LiveTweetsPresenter {
     
     func present() {
-        let items = [Tweet(), Tweet(), Tweet(), Tweet()]
-        //        self.tweetsViewModel = TweetsViewModel(items, delegate: self)
+        self.startStream()
     }
     
     func set(view: LiveTweetsPresentingView) {
@@ -45,9 +45,36 @@ extension LiveTweetsPresenterIMP: LiveTweetsPresenter {
         self.delegate?.openRules()
     }
     
+    func didTapRefresh() {
+        self.tweetsViewModel = TweetsViewModel(delegate: self)
+        self.view?.reload(tweets: self.tweetsViewModel)
+        self.startStream()
+    }
+    
+    func startStream(){
+        self.view?.willLoadingData()
+        self.service.startStream(with: StreamFilter()) { result in
+            switch result {
+            case .success(let tweet):
+                self.tweetsViewModel.addNew(tweet: tweet)
+            case .failure:
+                self.view?.didLoadingData()
+            }
+        }
+    }
+    
 }
 
 extension LiveTweetsPresenterIMP: TweetsViewModelDelegate {
+    
+    func didUpdate(indexPaths: [IndexPath]) {
+        self.view?.update(tweets: self.tweetsViewModel, indexPaths: indexPaths)
+    }
+    
+    func didReload() {
+        self.view?.reload(tweets: self.tweetsViewModel)
+    }
+    
     func didSelect(tweet: Tweet) {
         self.delegate?.didSelect(tweet: tweet)
     }

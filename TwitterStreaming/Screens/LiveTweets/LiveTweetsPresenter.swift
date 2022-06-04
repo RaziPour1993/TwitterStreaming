@@ -10,10 +10,12 @@ import Foundation
 protocol LiveTweetsPresenter: Presenter, LiveTweetsScreenManeger {
     func set(view: LiveTweetsPresentingView)
     func didTapRules()
+    func didTapRefresh()
 }
 
 protocol LiveTweetsPresentingView: PresentingView {
-    func updated(tweets viewModel: TableViewModel)
+    func update(tweets viewModel: TableViewModel, indexPaths: [IndexPath])
+    func reload(tweets viewModel: TableViewModel)
 }
 
 protocol LiveTweetsScreenDelegate: ScreenDelegate {

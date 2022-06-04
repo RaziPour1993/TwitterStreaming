@@ -9,35 +9,40 @@ import Foundation
 
 protocol TweetsViewModelDelegate: AnyObject {
     func didSelect(tweet: Tweet)
+    func didUpdate(indexPaths: [IndexPath])
+    func didReload()
 }
 
 class TweetsViewModel: TableViewModel {
     
-    var sections: [TableViewSectionModel]!
-    var tweets: Tweets!
-    
-    private weak var delegate: TweetsViewModelDelegate?
+    var sections: [TableViewSectionModel]
+    var tweets: [Tweet] = []
+    weak var delegate: TweetsViewModelDelegate?
     
     init(delegate: TweetsViewModelDelegate?) {
         self.sections = []
         self.delegate = delegate
     }
     
-    init(_ tweets: Tweets, delegate: TweetsViewModelDelegate?) {
-        self.tweets = tweets
-        self.delegate = delegate
-        let items =  self.tweets.map { item in
-            return TweetCellViewModel(item, delegate: self)
+    func addNew(tweet: Tweet){
+        self.tweets.insert(tweet, at: 0)
+        let item = TweetCellViewModel(tweet, delegate: self)
+        
+        if sections.isEmpty {
+            let section = TableViewSection(cellModels: [item])
+            self.sections = [section]
+            self.delegate?.didReload()
+        } else {
+            self.sections[0].cellModels.insert(item, at: 0)
+            self.delegate?.didUpdate(indexPaths: [IndexPath(row: 0, section: 0)])
         }
         
-        let section = TableViewSection(cellModels: items)
-        self.sections = [section]
     }
     
 }
 
 extension TweetsViewModel: TweetCellViewModelDelegate {
-
+    
     func didSelect(tweet: TweetCellViewModel) {
         self.delegate?.didSelect(tweet: tweet.tweet)
     }

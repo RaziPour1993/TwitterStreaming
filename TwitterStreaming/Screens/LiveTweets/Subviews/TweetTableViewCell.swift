@@ -7,24 +7,43 @@
 
 import UIKit
 
-
 protocol TweetTableViewCellDelegate: AnyObject {
     func didSelectTweet()
 }
 
 class TweetTableViewCell: UITableViewCell, ReusableView, NibLoadableView {
-
+    
+    @IBOutlet weak var profileImageContainerView: UIView!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var tweetTextLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var commentCountLabel: UILabel!
+    @IBOutlet weak var retweetCountLabel: UILabel!
+    @IBOutlet weak var likeCountLabel: UILabel!
+    
     weak var delegate: TweetTableViewCellDelegate?
     
     var tweet: TweetCellViewModel? {
         didSet {
             guard let model = self.tweet else {
+                self.profileImage.image = nil
+                self.tweet?.viewUpdateDelegate = nil
+                self.delegate = nil
                 return
             }
-            
             model.viewUpdateDelegate = self
-            debugPrint("model.name", model.name)
             self.delegate = model
+            
+            self.nameLabel.text = model.name
+            self.usernameLabel.text = model.username
+            self.tweetTextLabel.text = model.tweetText
+            self.commentCountLabel.text = model.commentCount
+            self.retweetCountLabel.text = model.retweetCount
+            self.likeCountLabel.text = model.likeCount
+            self.profileImage.imageFromServerURL(model.profileImage, placeHolder: UIImage(systemName: "rays"))
+            
         }
         
     }
@@ -32,10 +51,9 @@ class TweetTableViewCell: UITableViewCell, ReusableView, NibLoadableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
+        viewConfig()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         if selected {
@@ -44,9 +62,15 @@ class TweetTableViewCell: UITableViewCell, ReusableView, NibLoadableView {
     }
     
     override func prepareForReuse() {
-        self.tweet?.viewUpdateDelegate = nil
-        self.delegate = nil
         self.tweet = nil
+    }
+    
+    func viewConfig() {
+        self.containerView.clipsToBounds = true
+        self.containerView.layer.cornerRadius = 5
+        
+        self.profileImageContainerView.clipsToBounds = true
+        self.profileImageContainerView.layer.cornerRadius = 25
     }
     
 }
