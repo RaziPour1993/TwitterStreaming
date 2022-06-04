@@ -6,17 +6,15 @@ protocol RulesService {
     func retrieveRules(completion: @escaping(Result<Rules, NetworkResponseStatus>)-> Void)
 }
 
-
-class RulesServiceIMP: RulesService {
+class RulesServiceNetworkIMP: RulesService {
     
     var networkManeger: NetworkManeger
     var parser: Parser
     
     init() {
-        self.networkManeger = NetworkManegerIMP()
+        self.networkManeger = NetworkManegerRequestIMP()
         self.parser = ParserIMP()
     }
-    
     
     func addRules(info: AddRules, completion: @escaping (Result<Bool, NetworkResponseStatus>) -> Void) {
         self.networkManeger.request(with: NetworkRequestIMP.addRules(info)) { (result) in

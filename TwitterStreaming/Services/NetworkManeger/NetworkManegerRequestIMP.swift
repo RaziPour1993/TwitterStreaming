@@ -1,12 +1,7 @@
 import Foundation
 
-protocol NetworkManeger {
-    func request(with request: NetworkRequest, completion: @escaping (Result<Data?, NetworkResponseStatus>)-> Void)
-}
-
-class NetworkManegerIMP: NetworkManeger {
+class NetworkManegerRequestIMP: NetworkManeger {
     
-    static let shared = NetworkManegerIMP()
     let session: URLSession
     var networkResponseStatusManeger: NetworkResponseStatusManeger
     
@@ -16,7 +11,6 @@ class NetworkManegerIMP: NetworkManeger {
     }
     
     func request(with request: NetworkRequest, completion: @escaping (Result<Data?, NetworkResponseStatus>) -> Void) {
-        debugPrint(request)
         
         guard let request = request.request else {
             completion(.failure(.internalStatus(status: .invalidUrl, message: "InvalidURL")))
@@ -38,6 +32,10 @@ class NetworkManegerIMP: NetworkManeger {
         }
         
         task.resume()
+    }
+    
+    func disconnect() {
+        
     }
     
 }
