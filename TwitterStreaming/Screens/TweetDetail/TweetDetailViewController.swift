@@ -54,14 +54,14 @@ extension TweetDetailViewController {
         self.tableView.tableFooterView = UIView()
         self.tableView.sectionHeaderHeight = 0.0
         self.tableView.sectionFooterHeight = 0.0
-        self.tableView.register(TweetTableViewCell.self)
+        self.tableView.register(TweetDetailTableViewCell.self)
     }
     
 }
 
 extension TweetDetailViewController: TweetDetailPresentingView {
     
-    func updated(tweetDetail viewModel: TableViewModel) {
+    func reload(tweetDetail viewModel: TableViewModel) {
         self.tableViewDataSource.viewModel = viewModel
         self.tableView.reloadData()
     }
