@@ -46,9 +46,12 @@ extension LiveTweetsPresenterIMP: LiveTweetsPresenter {
     }
     
     func didTapRefresh() {
-        self.tweetsViewModel = TweetsViewModel(delegate: self)
-        self.view?.reload(tweets: self.tweetsViewModel)
-        self.startStream()
+        self.service.stopStream { result in
+            self.view?.didLoadingData()
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.startStream()
+//            }
+        }
     }
     
     func startStream(){

@@ -41,14 +41,13 @@ extension LiveTweetsViewController {
         let rulesBarButtonItem = UIBarButtonItem(title: "Rules", style: .plain, target: self, action: #selector(rulesButtonAction))
         self.navigationItem.rightBarButtonItems = [rulesBarButtonItem]
         
-        self.activityIndicator.hidesWhenStopped = false
         self.activityIndicator.color = UIColor.systemBlue
         let activityIndicatorBarButtonItem = UIBarButtonItem(customView: activityIndicator)
         activityIndicator.stopAnimating()
         
         let retryBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "repeat"), style: .plain, target: self, action: #selector(retryButtonAction))
-        activityIndicator.startAnimating()
-        self.navigationItem.leftBarButtonItems = [activityIndicatorBarButtonItem, retryBarButtonItem]
+        self.navigationItem.leftBarButtonItems = [retryBarButtonItem, activityIndicatorBarButtonItem]
+        
         
     }
     
@@ -77,6 +76,7 @@ extension LiveTweetsViewController {
     @objc func retryButtonAction() {
         self.presenter.didTapRefresh()
     }
+    
 }
 
 extension LiveTweetsViewController: LiveTweetsPresentingView {

@@ -54,14 +54,10 @@ extension NetworkRequestIMP: NetworkRequest {
         case .addRules : url = "/rules"
         case .deleteRules: url = "/rules"
         case .retrieveRules: url = "/rules"
-        case .stream(let filter):
+        case .stream:
             url = "?expansions=author_id&tweet.fields=created_at,text,entities,public_metrics,source&user.fields=name,username,verified,profile_image_url,location,url,public_metrics&media.fields=type,url,public_metrics&place.fields=full_name,country"
         }
-        
-        
-        
-//        url = "?tweet.fields=created_at,text,public_metrics,source&user.fields=name,username,profile_image_url,url,public_metrics&media.fields=public_metrics"
-        
+
         guard let strURL = (self.enviroment + url).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let urlValid = URL(string: strURL) else {
             return nil
         }
@@ -89,8 +85,6 @@ extension NetworkRequestIMP: NetworkRequest {
             data = self.bodyEncoding?.encode(parameters: info)
         case .deleteRules(let info):
             data = self.bodyEncoding?.encode(parameters: info)
-//        case .stream(let info) :
-//            data = self.bodyEncoding?.encode(parameters: info)
         default: data = nil
         }
         
@@ -101,8 +95,6 @@ extension NetworkRequestIMP: NetworkRequest {
         switch self {
         case .addRules, .deleteRules:
             return JSONEncoding()
-//        case .stream:
-//            return URLEncoding()
         default: return nil
         }
     }

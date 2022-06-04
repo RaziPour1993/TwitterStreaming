@@ -12,6 +12,7 @@ class StreamManagerRequestIMP: NSObject, NetworkManeger {
     
     private var currentTask: URLSessionDataTask?
     private var streamCompletion: ((Result<Data?, NetworkResponseStatus>) -> Void?)?
+    private var disconnectCompletion: ((Bool) -> Void?)?
     
     var statusManeger: NetworkResponseStatusManeger
     unowned(unsafe) let dispatchQueue: DispatchQueue
@@ -29,6 +30,7 @@ class StreamManagerRequestIMP: NSObject, NetworkManeger {
         }
         
         self.streamCompletion = completion
+
         currentTask = session.dataTask(with: request)
         currentTask?.resume()
     }
@@ -36,6 +38,17 @@ class StreamManagerRequestIMP: NSObject, NetworkManeger {
     func disconnect() {
         currentTask?.cancel()
         currentTask = nil
+    }
+    
+    func disconnect(completion: @escaping (Bool) -> Void) {
+        self.streamCompletion = nil
+        self.disconnectCompletion = completion
+        if currentTask == nil {
+            self.disconnectCompletion?(true)
+            self.disconnectCompletion = nil
+            return
+        }
+        self.disconnect()
     }
 }
 
@@ -74,7 +87,9 @@ extension StreamManagerRequestIMP: URLSessionDataDelegate {
         DispatchQueue.main.async {
             let responseStatus = self.statusManeger.handel(nil, nil, error)
             self.streamCompletion?(.failure(responseStatus))
+            self.disconnectCompletion?(true)
             self.streamCompletion = nil
+            self.disconnectCompletion = nil
         }
     }
     

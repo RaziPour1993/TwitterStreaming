@@ -34,7 +34,7 @@ class NetworkManegerRequestIMP: NetworkManeger {
         task.resume()
     }
     
-    func disconnect() {
+    func disconnect(completion: @escaping (Bool) -> Void) {
         
     }
     

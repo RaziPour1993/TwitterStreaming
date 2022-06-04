@@ -9,5 +9,5 @@ import Foundation
 
 protocol NetworkManeger {
     func request(with request: NetworkRequest, completion: @escaping (Result<Data?, NetworkResponseStatus>)-> Void)
-    func disconnect()
+    func disconnect(completion: @escaping (Bool)-> Void)
 }
